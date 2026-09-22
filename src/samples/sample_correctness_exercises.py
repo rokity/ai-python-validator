@@ -19,23 +19,19 @@ def load_config(name: str) -> dict:
 
 
 def main(model: str = MODELS[0]) -> None:
-    exercises = load_config("exercises.json")["exercises"]
-    items = load_config("implementation.json")["items"]
-    implementations = [impl for item in items for impl in item["implementations"]]
-    code = [impl["code"] for impl in implementations]
-    expected = [impl["label"] for impl in implementations]
-    exercises = [exercise["statement"] for exercise in exercises]
-    # merge exercises and code into a single dictionary where each exercise maps to its implementations
-    merged = {}
-    for i, exercise in enumerate(exercises):
-        merged[exercise] = []
-        for j in range(4):
-            merged[exercise].append(
-                {"code": code[i * 4 + j], "expected": expected[i * 4 + j]}
-            )
+    exercises = load_config("implementation.json")["items"]
+    implementations = [
+        {
+            "code": impl["code"],
+            "label": impl["label"],
+            "statement": exercise["statement"],
+        }
+        for exercise in exercises
+        for impl in exercise["implementations"]
+    ]
 
     factory = PythonCorrectnessFactory(model=model)
-    failed, success = factory.validate(exercises=merged)
+    failed, success = factory.validate(implementations=implementations)
 
     print(f"Validation results: failed={failed}, success={success}")
     print(
