@@ -1,0 +1,367 @@
+{
+  "source": "https://pynative.com/python-basic-exercise-for-beginners/",
+  "note": "4 candidate implementations per exercise. Some are intentionally incorrect or syntactically invalid.",
+  "items": [
+    {
+      "exercise_id": 1,
+      "implementations": [
+        { "id": "1a", "label":true, "code": "def multiplication_or_sum(n1, n2):\n    product = n1 * n2\n    if product <= 1000:\n        return product\n    return n1 + n2\n\nprint(multiplication_or_sum(20, 30))\nprint(multiplication_or_sum(40, 30))" },
+        { "id": "1b", "label": false, "code": "def multiplication_or_sum(n1, n2):\n    if n1 * n2 < 1000:\n        return n1 * n2\n    else:\n        return n1 * n2" },
+        { "id": "1c", "label": false, "code": "def multiplication_or_sum(n1, n2)\n    p = n1 * n2\n    return p if p <= 1000 else n1 + n2" },
+        { "id": "1d", "label": true, "code": "multiplication_or_sum = lambda a, b: a * b if a * b <= 1000 else a + b\nprint(multiplication_or_sum(20, 30))" }
+      ]
+    },
+    {
+      "exercise_id": 2,
+      "implementations": [
+        { "id": "2a", "label": true, "code": "previous = 0\nfor i in range(10):\n    print(\"Current\", i, \"Previous\", previous, \"Sum\", i + previous)\n    previous = i" },
+        { "id": "2b", "label": false, "code": "nums = list(range(10))\nfor i in range(len(nums)):\n    print(nums[i], nums[i - 1], nums[i] + nums[i - 1])" },
+        { "id": "2c", "label": false, "code": "for i in range(10):\n    previous = i + 1\n    print(i, previous, i + previous)" },
+        { "id": "2d", "label": true, "code": "nums = range(10)\nfor prev, cur in zip([0] + list(nums), nums):\n    print(cur, prev, cur + prev)" }
+      ]
+    },
+
+    {
+      "exercise_id": 3,
+      "implementations": [
+        { "id": "3a", "label": true, "code": "s = \"pynative\"\nfor i in range(0, len(s), 2):\n    print(s[i], end=\"\")" },
+        { "id": "3b", "label": true, "code": "s = \"pynative\"\nprint(s[::2])" },
+        { "id": "3c", "label": false, "code": "s = \"pynative\"\nprint(s[1::2])" },
+        { "id": "3d", "label": true, "code": "s = \"pynative\"\nprint(\"\".join(c for i, c in enumerate(s) if i % 2 == 0))" }
+      ]
+    },
+    {
+      "exercise_id": 4,
+      "implementations": [
+        { "id": "4a", "label": true, "code": "def remove_chars(word, n):\n    return word[n:]\n\nprint(remove_chars(\"pynative\", 4))" },
+        { "id": "4b", "label": false, "code": "def remove_chars(word, n):\n    return word[:n]" },
+        { "id": "4c", "label": false, "code": "def remove_chars(word, n):\n    del word[0:n]\n    return word" },
+        { "id": "4d", "label": true, "code": "def remove_chars(word, n):\n    out = \"\"\n    for i in range(len(word)):\n        if i >= n:\n            out += word[i]\n    return out" }
+      ]
+    },
+    {
+      "exercise_id": 5,
+      "implementations": [
+        { "id": "5a", "label": true, "code": "a, b = 5, 10\na, b = b, a\nprint(a, b)" },
+        { "id": "5b", "label": false, "code": "a, b = 5, 10\na = b\nb = a\nprint(a, b)" },
+        { "id": "5c", "label": true, "code": "a, b = 5, 10\na = a + b\nb = a - b\na = a - b\nprint(a, b)" },
+        { "id": "5d", "label": false, "code": "a, b = 5, 10\na, b = b a\nprint(a, b)" }
+      ]
+    },
+    {
+      "exercise_id": 6,
+      "implementations": [
+        { "id": "6a", "label": true, "code": "number = 5\nfactorial = 1\nfor i in range(1, number + 1):\n    factorial *= i\nprint(factorial)" },
+        { "id": "6b", "label": true, "code": "import math\nprint(math.factorial(5))" },
+        { "id": "6c", "label": false, "code": "number = 5\nf = 1\nfor i in range(1, number):\n    f = f * i\nprint(f)" },
+        { "id": "6d", "label": false, "code": "def fact(n):\n    return n * fact(n - 1)\n\nprint(fact(5))" }
+      ]
+    },
+    {
+      "exercise_id": 7,
+      "implementations": [
+        { "id": "7a", "label": true, "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"]\nfruits.append(\"fig\")\nfruits.pop(1)\nprint(fruits)" },
+        { "id": "7b", "label": true, "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"]\nfruits += [\"fig\"]\nfruits.remove(\"banana\")\nprint(fruits)" },
+        { "id": "7c", "label": true, "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"]\nfruits.append(\"fig\")\ndel fruits[2]\nprint(fruits)" },
+        { "id": "7d", "label": false, "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"\nfruits.insert(len(fruits), \"fig\")\nfruits.pop(1)\nprint(fruits)" }
+      ]
+    },
+    {
+      "exercise_id": 8,
+      "implementations": [
+        { "id": "8a", "label": true, "code": "text = \"Python\"\nprint(\"Reversed:\", text[::-1])" },
+        { "id": "8b", "label": true, "code": "text = \"Python\"\nprint(\"Reversed:\", \"\".join(reversed(text)))" },
+        { "id": "8c", "label": true, "code": "text = \"Python\"\nout = \"\"\nfor ch in text:\n    out = ch + out\nprint(out)" },
+        { "id": "8d", "label": false, "code": "text = \"Python\"\ntext.reverse()\nprint(text)" }
+      ]
+    },
+    {
+      "exercise_id": 9,
+      "implementations": [
+        { "id": "9a", "label": true, "code": "sentence = \"Learning Python is fun!\"\ncount = 0\nfor ch in sentence.lower():\n    if ch in \"aeiou\":\n        count += 1\nprint(\"Number of vowels:\", count)" },
+        { "id": "9b", "label": true, "code": "sentence = \"Learning Python is fun!\"\nprint(sum(1 for c in sentence.lower() if c in \"aeiou\"))" },
+        { "id": "9c", "label": false, "code": "sentence = \"Learning Python is fun!\"\nprint(len([c for c in sentence if c in \"aeiouy\"]))" },
+        { "id": "9d", "label": false, "code": "sentence = \"Learning Python is fun!\"\ncount = 0\nfor ch in sentence\n    if ch in \"aeiouAEIOU\":\n        count += 1\nprint(count)" }
+      ]
+    },
+    {
+      "exercise_id": 10,
+      "implementations": [
+        { "id": "10a", "label": true, "code": "nums = [45, 2, 89, 12, 7]\nprint(\"Largest:\", max(nums))\nprint(\"Smallest:\", min(nums))" },
+        { "id": "10b", "label": true, "code": "nums = [45, 2, 89, 12, 7]\nnums.sort()\nprint(\"Largest:\", nums[-1], \"Smallest:\", nums[0])" },
+        { "id": "10c", "label": false, "code": "nums = [45, 2, 89, 12, 7]\nlargest = 0\nsmallest = 0\nfor n in nums:\n    if n > largest:\n        largest = n\n    if n < smallest:\n        smallest = n\nprint(largest, smallest)" },
+        { "id": "10d", "label": false, "code": "nums = [45, 2, 89, 12, 7]\nprint(\"Largest:\" max(nums))" }
+      ]
+    },
+    {
+      "exercise_id": 11,
+      "implementations": [
+        { "id": "11a", "label": true, "code": "data = [1, 2, 2, 3, 4, 4, 4, 5]\nprint(\"Unique List:\", list(set(data)))" },
+        { "id": "11b", "label": true, "code": "data = [1, 2, 2, 3, 4, 4, 4, 5]\nprint(list(dict.fromkeys(data)))" },
+        { "id": "11c", "label": true, "code": "data = [1, 2, 2, 3, 4, 4, 4, 5]\nunique = []\nfor n in data:\n    if n not in unique:\n        unique.append(n)\nprint(unique)" },
+        { "id": "11d", "label": false, "code": "data = [1, 2, 2, 3, 4, 4, 4, 5]\nfor n in data:\n    if data.count(n) > 1:\n        data.remove(n)\nprint(data)" }
+      ]
+    },
+    {
+      "exercise_id": 12,
+      "implementations": [
+        { "id": "12a", "label": true, "code": "def first_last_same(numbers):\n    return numbers[0] == numbers[-1]\n\nprint(first_last_same([10, 20, 30, 40, 10]))" },
+        { "id": "12b", "label": false, "code": "def first_last_same(numbers):\n    if numbers[0] == numbers[-2]:\n        return True\n    return False" },
+        { "id": "12c", "label": true, "code": "def first_last_same(numbers):\n    first = numbers[0]\n    last = numbers[len(numbers) - 1]\n    if first == last:\n        return True\n    else:\n        return False" },
+        { "id": "12d", "label": false, "code": "def first_last_same(numbers)\n    return numbers[0] is numbers[-1]" }
+      ]
+    },
+    {
+      "exercise_id": 13,
+      "implementations": [
+        { "id": "13a", "label": true, "code": "num_list = [10, 20, 33, 46, 55]\nfor n in num_list:\n    if n % 5 == 0:\n        print(n)" },
+        { "id": "13b", "label": true, "code": "num_list = [10, 20, 33, 46, 55]\nprint([n for n in num_list if n % 5 == 0])" },
+        { "id": "13c", "label": false, "code": "num_list = [10, 20, 33, 46, 55]\nfor n in num_list:\n    if n % 5 == 1:\n        print(n)" },
+        { "id": "13d", "label": false, "code": "num_list = [10, 20, 33, 46, 55]\nprint(list(filter(lambda x: x / 5 == 0, num_list)))" }
+      ]
+    },
+    {
+      "exercise_id": 14,
+      "implementations": [
+        { "id": "14a", "label": true, "code": "str_x = \"Emma is good developer. Emma is a writer\"\nprint(\"Emma appeared\", str_x.count(\"Emma\"), \"times\")" },
+        { "id": "14b", "label": true, "code": "str_x = \"Emma is good developer. Emma is a writer\"\ncount = 0\nstart = 0\nwhile True:\n    i = str_x.find(\"Emma\", start)\n    if i == -1:\n        break\n    count += 1\n    start = i + 1\nprint(count)" },
+        { "id": "14c", "label": true, "code": "import re\nstr_x = \"Emma is good developer. Emma is a writer\"\nprint(len(re.findall(\"Emma\", str_x)))" },
+        { "id": "14d", "label": false, "code": "str_x = \"Emma is good developer. Emma is a writer\"\nprint(str_x.split().count(\"emma\"))" }
+      ]
+    },
+    {
+      "exercise_id": 15,
+      "implementations": [
+        { "id": "15a", "label": true, "code": "for i in range(1, 6):\n    for j in range(i):\n        print(i, end=\" \")\n    print()" },
+        { "id": "15b", "label": true, "code": "for i in range(1, 6):\n    print(\" \".join([str(i)] * i))" },
+        { "id": "15c", "label": false, "code": "for i in range(1, 6):\n    for j in range(5):\n        print(i, end=\" \")\n    print()" },
+        { "id": "15d", "label": true, "code": "for i in range(1, 6):\n    print((str(i) + \" \") * i" }
+      ]
+    },
+    {
+      "exercise_id": 16,
+      "implementations": [
+        { "id": "16a", "label": true, "code": "number = 121\nif str(number) == str(number)[::-1]:\n    print(number, \"is palindrome number\")\nelse:\n    print(number, \"is not palindrome number\")" },
+        { "id": "16b", "label": true, "code": "number = 125\nn, rev = number, 0\nwhile n > 0:\n    rev = rev * 10 + n % 10\n    n //= 10\nprint(rev == number)" },
+        { "id": "16c", "label": false, "code": "number = 121\nif str(number) == str(number):\n    print(\"palindrome\")" },
+        { "id": "16d", "label": false, "code": "number = 121\nprint(number == int(reversed(str(number))))" }
+      ]
+    },
+    {
+      "exercise_id": 17,
+      "implementations": [
+        { "id": "17a", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nresult = [n for n in list1 if n % 2 != 0] + [n for n in list2 if n % 2 == 0]\nprint(result)" },
+        { "id": "17b", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nresult = []\nfor n in list1:\n    if n % 2 == 1:\n        result.append(n)\nfor n in list2:\n    if n % 2 == 0:\n        result.append(n)\nprint(result)" },
+        { "id": "17c", "label": false, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nprint([n for n in list1 if n % 2 == 0] + [n for n in list2 if n % 2 != 0])" },
+        { "id": "17d", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nprint([n for n in list1 if n % 2] + [n for n in list2 if not n % 2]" }
+      ]
+    },
+    {
+      "exercise_id": 18,
+      "implementations": [
+        { "id": "18a", "label": true, "code": "number = 7536\nwhile number > 0:\n    print(number % 10, end=\" \")\n    number //= 10" },
+        { "id": "18b", "label": true, "code": "number = 7536\nfor d in str(number)[::-1]:\n    print(d, end=\" \")" },
+        { "id": "18c", "label": false, "code": "number = 7536\nwhile number > 0:\n    print(number % 10)\n    number /= 10" },
+        { "id": "18d", "label": false, "code": "number = 7536\nprint(*list(str(number)).reverse())" }
+      ]
+    },
+    {
+      "exercise_id": 19,
+      "implementations": [
+        { "id": "19a", "label": true, "code": "income = 45000\ntax = 0\nif income > 20000:\n    tax += (income - 20000) * 0.20\n    income = 20000\nif income > 10000:\n    tax += (income - 10000) * 0.10\nprint(\"Total income tax to pay is\", int(tax))" },
+        { "id": "19b", "label": false, "code": "income = 45000\nprint(int(income * 0.20))" },
+        { "id": "19c", "label": true, "code": "def tax_of(income):\n    if income <= 10000:\n        return 0\n    elif income <= 20000:\n        return (income - 10000) * 0.1\n    return 1000 + (income - 20000) * 0.2\n\nprint(tax_of(45000))" },
+        { "id": "19d", "label": false, "code": "income = 45000\ntax = 0\nif income > 10000\n    tax = tax + 1000\nprint(tax)" }
+      ]
+    },
+    {
+      "exercise_id": 20,
+      "implementations": [
+        { "id": "20a", "label": true, "code": "for i in range(1, 11):\n    for j in range(1, 11):\n        print(f\"{i * j:4}\", end=\"\")\n    print()" },
+        { "id": "20b", "label": true, "code": "for i in range(1, 11):\n    print(\" \".join(str(i * j) for j in range(1, 11)))" },
+        { "id": "20c", "label": true, "code": "for i in range(1, 10):\n    for j in range(1, 10):\n        print(i * j, end=\" \")\n    print()" },
+        { "id": "20d", "label": false, "code": "for i in range(1, 11):\n    for j in range(1, 11):\n        print(i * j, end=\" \"\n    print()" }
+      ]
+    },
+    {
+      "exercise_id": 21,
+      "implementations": [
+        { "id": "21a", "label": true, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(\"* \" * i)" },
+        { "id": "21b", "label": true, "code": "rows = 5\nfor i in range(rows):\n    for j in range(rows - i):\n        print(\"*\", end=\" \")\n    print()" },
+        { "id": "21c", "label": true, "code": "rows = 5\nfor i in range(1, rows + 1):\n    print(\"* \" * i)" },
+        { "id": "21d", "label": false, "code": "rows = 5\nfor i in reversed(range(rows))\n    print(\"* \" * (i + 1))" }
+      ]
+    },
+    {
+      "exercise_id": 22,
+      "implementations": [
+        { "id": "22a", "label": true, "code": "def exponent(base, exp):\n    result = 1\n    for _ in range(exp):\n        result *= base\n    return result\n\nprint(exponent(2, 5))" },
+        { "id": "22b", "label": true, "code": "def exponent(base, exp):\n    return base ** exp" },
+        { "id": "22c", "label": true, "code": "def exponent(base, exp):\n    if exp == 0:\n        return 1\n    return base * exponent(base, exp - 1)" },
+        { "id": "22d", "label": false, "code": "def exponent(base, exp):\n    return base * exp" }
+      ]
+    },
+    {
+      "exercise_id": 23,
+      "implementations": [
+        { "id": "23a", "label": true, "code": "number = 121\noriginal = number\nrev = 0\nwhile number > 0:\n    rev = rev * 10 + number % 10\n    number = number // 10\nprint(\"Yes\" if rev == original else \"No\")" },
+        { "id": "23b", "label": true, "code": "number = 121\nprint(str(number) == str(number)[::-1])" },
+        { "id": "23c", "label": true, "code": "number = 121\nprint(list(str(number)) == list(reversed(str(number))))" },
+        { "id": "23d", "label": false, "code": "number = 121\nrev = 0\nwhile number > 0:\n    rev = rev + number % 10\n    number //= 10\nprint(rev == number)" }
+      ]
+    },
+    {
+      "exercise_id": 24,
+      "implementations": [
+        { "id": "24a", "label": true, "code": "a, b = 0, 1\nfor _ in range(15):\n    print(a, end=\" \")\n    a, b = b, a + b" },
+        { "id": "24b", "label": true, "code": "def fib(n):\n    if n < 2:\n        return n\n    return fib(n - 1) + fib(n - 2)\n\nprint([fib(i) for i in range(15)])" },
+        { "id": "24c", "label": true, "code": "series = [0, 1]\nwhile len(series) < 15:\n    series.append(series[-1] + series[-2])\nprint(series)" },
+        { "id": "24d", "label": true, "code": "a, b = 1, 1\nfor i in range(15):\n    print(a, end=\" \")\n    a = b\n    b = a + b" }
+      ]
+    },
+    {
+      "exercise_id": 25,
+      "implementations": [
+        { "id": "25a", "label": true, "code": "year = 2024\nif year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):\n    print(year, \"is a leap year\")\nelse:\n    print(year, \"is not a leap year\")" },
+        { "id": "25b", "label": true,  "code": "import calendar\nyear = 2024\nprint(calendar.isleap(year))" },
+        { "id": "25c", "label": false, "code": "year = 2024\nif year % 4 == 0:\n    print(\"leap year\")\nelse:\n    print(\"not leap year\")" },
+        { "id": "25d", "label": false, "code": "year = 2024\nprint(f\"{year} is a leap year\" if year % 4 == 0 and year % 100 != 0 or year % 400 == 0 else)" }
+      ]
+    },
+    {
+      "exercise_id": 26,
+      "implementations": [
+        { "id": "26a", "label": true, "code": "dict1 = {\"name\": \"Alice\", \"age\": 25}\ndict2 = {\"city\": \"New York\", \"job\": \"Engineer\"}\nmerged = dict1.copy()\nmerged.update(dict2)\nprint(merged)" },
+        { "id": "26b", "label": true, "code": "dict1 = {\"name\": \"Alice\", \"age\": 25}\ndict2 = {\"city\": \"New York\", \"job\": \"Engineer\"}\nprint({**dict1, **dict2})" },
+        { "id": "26c", "label": true, "code": "dict1 = {\"name\": \"Alice\", \"age\": 25}\ndict2 = {\"city\": \"New York\", \"job\": \"Engineer\"}\nprint(dict1 | dict2)" },
+        { "id": "26d", "label": false, "code": "dict1 = {\"name\": \"Alice\", \"age\": 25}\ndict2 = {\"city\": \"New York\", \"job\": \"Engineer\"}\nprint(dict1 + dict2)" }
+      ]
+    },
+    {
+      "exercise_id": 27,
+      "implementations": [
+        { "id": "27a", "label": true, "code": "list_a = [1, 2, 3, 4, 5]\nlist_b = [4, 5, 6, 7, 8]\nprint(\"Common Elements:\", set(list_a) & set(list_b))" },
+        { "id": "27b", "label": true, "code": "list_a = [1, 2, 3, 4, 5]\nlist_b = [4, 5, 6, 7, 8]\nprint(set(list_a).intersection(list_b))" },
+        { "id": "27c", "label": true, "code": "list_a = [1, 2, 3, 4, 5]\nlist_b = [4, 5, 6, 7, 8]\nprint({x for x in list_a if x in list_b})" },
+        { "id": "27d", "label": false, "code": "list_a = [1, 2, 3, 4, 5]\nlist_b = [4, 5, 6, 7, 8]\nprint(set(list_a).union(set(list_b)))" }
+      ]
+    },
+    {
+      "exercise_id": 28,
+      "implementations": [
+        { "id": "28a", "label": true, "code": "numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]\neven, odd = [], []\nfor n in numbers:\n    if n % 2 == 0:\n        even.append(n)\n    else:\n        odd.append(n)\nprint(\"Even numbers:\", even)\nprint(\"Odd numbers:\", odd)" },
+        { "id": "28b", "label": true, "code": "numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]\nprint([n for n in numbers if n % 2 == 0])\nprint([n for n in numbers if n % 2])" },
+        { "id": "28c", "label": false, "code": "numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]\neven, odd = [], []\nfor n in numbers:\n    even.append(n)\nprint(even, odd)" },
+        { "id": "28d", "label": false, "code": "numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]\neven = odd = []\nfor n in numbers\n    (even if n % 2 == 0 else odd).append(n)" }
+      ]
+    },
+    {
+      "exercise_id": 29,
+      "implementations": [
+        { "id": "29a", "label": true, "code": "words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]\nfor w in words:\n    print(w, \"-\", len(w))" },
+        { "id": "29b", "label": true, "code": "words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]\nprint(\"\\n\".join(f\"{w} - {len(w)}\" for w in words))" },
+        { "id": "29c", "label": false, "code": "words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]\nfor i, w in enumerate(words):\n    print(w, \"-\", i)" },
+        { "id": "29d", "label": false, "code": "words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]\nfor w in words:\n    print(w, \"-\", w.length())" }
+      ]
+    },
+    {
+      "exercise_id": 30,
+      "implementations": [
+        { "id": "30a", "label": true, "code": "text = \"apple banana apple cherry banana apple\"\ncounts = {}\nfor w in text.split():\n    counts[w] = counts.get(w, 0) + 1\nprint(counts)" },
+        { "id": "30b", "label": true, "code": "from collections import Counter\ntext = \"apple banana apple cherry banana apple\"\nprint(dict(Counter(text.split())))" },
+        { "id": "30c", "label": true, "code": "text = \"apple banana apple cherry banana apple\"\ncounts = {}\nfor w in text.split():\n    counts.setdefault(w, 0)\n    counts[w] += 1\nprint(counts)" },
+        { "id": "30d", "label": false, "code": "text = \"apple banana apple cherry banana apple\"\ncounts = {}\nfor ch in text:\n    counts[ch] = counts.get(ch, 0) + 1\nprint(counts)" }
+      ]
+    },
+    {
+      "exercise_id": 31,
+      "implementations": [
+        { "id": "31a", "label": true,  "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nprimes = [n for n in range(2, 21) if is_prime(n)]\nprint(primes[::2])" },
+        { "id": "31b", "label": true, "code": "primes = []\nfor n in range(2, 21):\n    if all(n % d for d in range(2, n)):\n        primes.append(n)\nfor i in range(0, len(primes), 2):\n    print(primes[i], end=\", \")" },
+        { "id": "31c", "label": true, "code": "for n in range(2, 21):\n    for d in range(2, n):\n        if n % d == 0:\n            break\n    else:\n        print(n, end=\", \")" },
+        { "id": "31d", "label": true, "code": "primes = [n for n in range(2, 21) if all(n % d for d in range(2, n))]\nprint(primes[::2])" }
+      ]
+    },
+    {
+      "exercise_id": 32,
+      "implementations": [
+        { "id": "32a", "label": true,  "code": "print({n: n ** 2 for n in range(1, 11)})" },
+        { "id": "32b", "label": true, "code": "squares = {}\nfor n in range(1, 11):\n    squares[n] = n * n\nprint(squares)" },
+        { "id": "32c", "label": true, "code": "keys = list(range(1, 11))\nprint(dict(zip(keys, [k * k for k in keys])))" },
+        { "id": "32d", "label": false, "code": "print({n: n ** 2 for n in range(1, 10)})" }
+      ]
+    },
+    {
+      "exercise_id": 33,
+      "implementations": [
+        { "id": "33a", "label": true, "code": "sentence = \"I love coding in Python\"\nprint(sentence.replace(\" \", \"_\"))" },
+        { "id": "33b", "label": true, "code": "sentence = \"I love coding in Python\"\nprint(\"_\".join(sentence.split()))" },
+        { "id": "33c", "label": true, "code": "sentence = \"I love coding in Python\"\nout = \"\"\nfor ch in sentence:\n    out += \"_\" if ch == \" \" else ch\nprint(out)" },
+        { "id": "33d", "label": false, "code": "sentence = \"I love coding in Python\"\nsentence.replace(\"_\", \" \")\nprint(sentence)" }
+      ]
+    },
+    {
+      "exercise_id": 34,
+      "implementations": [
+        { "id": "34a", "label": true,  "code": "rows = 5\nfor i in range(rows, 0, -1):\n    for j in range(i, 0, -1):\n        print(j, end=\" \")\n    print()" },
+        { "id": "34b", "label": true, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(\" \".join(str(j) for j in range(i, 0, -1)))" },
+        { "id": "34c", "label": false, "code": "rows = 5\nfor i in range(1, rows + 1):\n    for j in range(1, i + 1):\n        print(j, end=\" \")\n    print()" },
+        { "id": "34d", "label": true, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(*range(i, 0, -1)\n" }
+      ]
+    },
+    {
+      "exercise_id": 35,
+      "implementations": [
+        { "id": "35a", "label": true, "code": "input_string = \"Python3\"\nfound = False\nfor ch in input_string:\n    if ch.isdigit():\n        found = True\n        break\nprint(f\"The string '{input_string}' contains digits: {found}\")" },
+        { "id": "35b", "label": true, "code": "input_string = \"Python3\"\nprint(any(c.isdigit() for c in input_string))" },
+        { "id": "35c", "label": true, "code": "import re\ninput_string = \"Python3\"\nprint(bool(re.search(r\"\\d\", input_string)))" },
+        { "id": "35d", "label": false, "code": "input_string = \"Python3\"\nprint(input_string.isdigit())" }
+      ]
+    },
+    {
+      "exercise_id": 36,
+      "implementations": [
+        { "id": "36a", "label": true, "code": "text = \"hello world from python\"\nprint(\" \".join(w[0].upper() + w[1:] for w in text.split()))" },
+        { "id": "36b", "label": true, "code": "text = \"hello world from python\"\nwords = text.split()\nfor i in range(len(words)):\n    words[i] = words[i].capitalize()\nprint(\" \".join(words))" },
+        { "id": "36c", "label": true, "code": "text = \"hello world from python\"\nout = \"\"\nupper_next = True\nfor ch in text:\n    out += ch.upper() if upper_next else ch\n    upper_next = ch == \" \"\nprint(out)" },
+        { "id": "36d", "label": true, "code": "text = \"hello world from python\"\nprint(text.title())" }
+      ]
+    },
+    {
+      "exercise_id": 37,
+      "implementations": [
+        { "id": "37a", "label": true, "code": "start_count = 5\nwhile start_count > 0:\n    print(start_count)\n    start_count -= 1\nprint(\"Blast off!\")" },
+        { "id": "37b", "label": true, "code": "for i in range(5, 0, -1):\n    print(i)\nprint(\"Blast off!\")" },
+        { "id": "37c", "label": true, "code": "import time\nn = 5\nwhile n:\n    print(n)\n    time.sleep(1)\n    n -= 1\nprint(\"Blast off!\")" },
+        { "id": "37d", "label": false, "code": "start_count = 5\nwhile start_count > 0:\n    print(start_count)\nprint(\"Blast off!\")" }
+      ]
+    },
+    {
+      "exercise_id": 38,
+      "implementations": [
+        { "id": "38a", "label": true, "code": "with open(\"notes.txt\", \"w\") as f:\n    f.write(\"Hello, this is my first note.\\n\")\n    f.write(\"Python file handling is simple.\\n\")\n    f.write(\"End of file.\\n\")\n\nwith open(\"notes.txt\") as f:\n    print(f.read())" },
+        { "id": "38b", "label": true, "code": "lines = [\"Hello, this is my first note.\\n\", \"Python file handling is simple.\\n\", \"End of file.\\n\"]\nf = open(\"notes.txt\", \"w\")\nf.writelines(lines)\nf.close()\nprint(open(\"notes.txt\").read())" },
+        { "id": "38c", "label": false, "code": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello, this is my first note.\")\nprint(f.read())\nf.close()" },
+        { "id": "38d", "label": false, "code": "with open(\"notes.txt\", \"w\") as f\n    f.write(\"End of file.\")" }
+      ]
+    },
+    {
+      "exercise_id": 39,
+      "implementations": [
+        { "id": "39a", "label": true, "code": "with open(\"sample.txt\") as f:\n    words = f.read().split()\nprint(f\"The file contains {len(words)} words.\")" },
+        { "id": "39b", "label": true, "code": "count = 0\nwith open(\"sample.txt\") as f:\n    for line in f:\n        count += len(line.split())\nprint(\"The file contains\", count, \"words.\")" },
+        { "id": "39c", "label": true, "code": "f = open(\"sample.txt\")\nprint(len(f.readlines()))\nf.close()" },
+        { "id": "39d", "label": true, "code": "with open(\"sample.txt\", \"r\") as f:\n    print(len(f.read().split(\" \")))" }
+      ]
+    },
+    {
+      "exercise_id": 40,
+      "implementations": [
+        { "id": "40a", "label": true,  "code": "class Car:\n    def __init__(self, make, model, year):\n        self.make = make\n        self.model = model\n        self.year = year\n\n    def start_engine(self):\n        print(f\"The {self.year} {self.make} {self.model}'s engine is now running!\")\n\nCar(\"Toyota\", \"Camry\", 2022).start_engine()" },
+        { "id": "40b", "label": false, "code": "class Car:\n    def __init__(make, model, year):\n        make = make\n        model = model\n        year = year\n\n    def start_engine():\n        print(\"engine running\")\n\nc = Car(\"Toyota\", \"Camry\", 2022)\nc.start_engine()" },
+        { "id": "40c", "label": true, "code": "from dataclasses import dataclass\n\n@dataclass\nclass Car:\n    make: str\n    model: str\n    year: int\n\n    def start_engine(self):\n        return f\"The {self.year} {self.make} {self.model}'s engine is now running!\"\n\nprint(Car(\"Toyota\", \"Camry\", 2022).start_engine())" },
+        { "id": "40d", "label": false, "code": "class Car\n    def __init__(self, make, model, year):\n        self.make, self.model, self.year = make, model, year\n\n    def start_engine(self):\n        print(self.year, self.make, self.model)" }
+      ]
+    }
+  ]
+}

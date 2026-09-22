@@ -1,10 +1,10 @@
 from ollama import chat
+from .service_interface import ServiceInterface
 
 
-class OllamaService:
+class OllamaService(ServiceInterface):
     def __init__(self, model_name: str, role: str = "user"):
-        self.model_name = model_name
-        self.role = role
+        super().__init__(model_name, role)
 
     def chat(self, message: str):
         messages = [

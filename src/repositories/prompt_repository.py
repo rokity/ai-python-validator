@@ -3,13 +3,18 @@ from abc import ABC
 
 
 class PromptRepository(ABC):
-    def __init__(self, language: str, code: str):
+    def __init__(self, language: str, code: str, exercise: str = ""):
         self.language = language
         self.code = code
+        self.exercise = exercise
 
     def get_prompt(self) -> str:
-        return "Please validate the syntax of this sample code, just answer yes or no, if it's yes don't say other things just Yes,if it's not valid please be COINCISE explaining where the issue is. The code is ```{language}\n{code}\n```"
+        pass
 
     def assemble_prompt(self) -> str:
         prompt = self.get_prompt()
         return prompt.replace("{code}", self.code).replace("{language}", self.language)
+
+    @staticmethod
+    def _check_response(response: str) -> bool:
+        pass
