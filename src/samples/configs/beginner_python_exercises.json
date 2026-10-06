@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Arithmetic Product and Conditional Logic",
+    "practice problem": "Write a Python function that accepts two integer numbers. If the product of the two numbers is less than or equal to 1000, return their product; otherwise, return their sum.",
+    "exercise purpose": "Learn basic control flow and the use of if-else statements. Understand how code decisions change output based on a mathematical threshold.",
+    "given input": "Case 1: number1 = 20, number2 = 30\nCase 2: number1 = 40, number2 = 30",
+    "expected output": "The result is 600\nThe result is 70"
+  },
+  {
+    "title": "Cumulative Sum of a Range",
+    "practice problem": "Iterate through the first 10 numbers (0–9). In each iteration, print the current number, the previous number, and their sum.",
+    "exercise purpose": "This exercise teaches “State Tracking.” In programming, you often need to remember a value from a previous loop iteration to calculate results in the current one. This is the basis for algorithms like Fibonacci sequences or running totals.",
+    "given input": "Range: numbers = range(10)",
+    "expected output": "Printing current and previous number sum in a range(10)\nCurrent Number 0 Previous Number 0 Sum: 0\nCurrent Number 1 Previous Number 0 Sum: 1\nCurrent Number 2 Previous Number 1 Sum: 3\n....\nCurrent Number 8 Previous Number 7 Sum: 15\nCurrent Number 9 Previous Number 8 Sum: 17\nReference article for help:\nPython range() function\nCalculate sum and average in Python"
+  },
+  {
+    "title": "String Indexing and Even Slicing",
+    "practice problem": "Display only those characters which are present at an even index number in given string.",
+    "exercise purpose": "Understand how data is stored in memory using zero-based indexing. In most languages, the first character is at position 0, the second at 1, and so on. Mastering indexing is vital for data parsing.",
+    "given input": "String: \"pynative\"",
+    "expected output": "Original String is  pynative\nPrinting only even index chars\np\nn\nt\nv"
+  },
+  {
+    "title": "String Slicing and Substring Removal",
+    "practice problem": "Write a function to remove characters from a string starting from index 0 up to n and return a new string.",
+    "exercise purpose": "This exercise demonstrates how to truncate data strings, a common data-cleaning task.",
+    "given input": "remove_chars(\"pynative\", 4)\nremove_chars(\"pynative\", 2)",
+    "expected output": "tive\nnative"
+  },
+  {
+    "title": "Variable Swapping (The In-Place Method)",
+    "practice problem": "Write a program to swap the values of two variables, a and b, without using a third temporary variable.",
+    "exercise purpose": "This exercise will help you learn about memory efficiency and Python’s special tuple unpacking feature. In other languages like C or Java, you need a temporary variable to swap values safely. In Python, you can swap values in one line without risking data loss.",
+    "given input": "a = 5, b = 10",
+    "expected output": "Before Swap: a = 5, b = 10\nAfter Swap: a = 10, b = 5"
+  },
+  {
+    "title": "Calculating Factorial with a Loop",
+    "practice problem": "Write a program that calculates the factorial of a given number (e.g., 5!) using a for loop.",
+    "exercise purpose": "This exercise explores “Mathematical Accumulation.” A factorial (e.g., 5! = 5*4*3*2*1) requires you to maintain a running product across multiple iterations, which is a core pattern in scientific computing.",
+    "given input": "number = 5",
+    "expected output": "The factorial of 5 is 120"
+  },
+  {
+    "title": "List Manipulation: Add and Remove",
+    "practice problem": "Create a list of 5 fruits. Add a new fruit to the end of the list, then remove the second fruit (at index 1).",
+    "exercise purpose": "This exercise teaches “Dynamic Collection Management.” Lists are rarely static; being able to modify, expand, and prune them is essential for handling data like shopping carts, user lists, or inventory systems.",
+    "given input": "fruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"]",
+    "expected output": "['apple', 'cherry', 'date', 'elderberry', 'fig']"
+  },
+  {
+    "title": "String Reversal",
+    "practice problem": "Write a program that takes a string and reverses it (e.g., “Python” becomes “nohtyP”).",
+    "exercise purpose": "This exercise demonstrates “Sequence Slicing.” Strings in Python are sequences, and mastering the slicing syntax is a powerful shortcut for data manipulation that would take 5-10 lines of code in other languages.",
+    "given input": "text = \"Python\"",
+    "expected output": "Reversed: nohtyP"
+  },
+  {
+    "title": "Vowel Frequency Counter",
+    "practice problem": "Write a program to count the total number of vowels (a, e, i, o, u) present in a given sentence.",
+    "exercise purpose": "This exercise introduces “Membership Testing.” By checking if a character belongs to a specific group (the vowels), you learn how to filter data based on categories. This is a fundamental step toward building text-analysis tools or spam filters.",
+    "given input": "sentence = \"Learning Python is fun!\"",
+    "expected output": "Number of vowels: 6"
+  },
+  {
+    "title": "Finding Extremes (Min/Max) in a List",
+    "practice problem": "Given a list of integers, find and print both the largest and the smallest numbers.",
+    "exercise purpose": "This exercise explores “Aggregate Functions.” While Python has built-in tools for this, understanding how to identify extremes is critical for data normalization, where you often need to find the range of a dataset before processing it.",
+    "given input": "nums = [45, 2, 89, 12, 7]",
+    "expected output": "Largest: 89 Smallest: 2"
+  },
+  {
+    "title": "Removing Duplicates from a List",
+    "practice problem": "Write a script that takes a list containing duplicate items and returns a new list with only unique elements.",
+    "exercise purpose": "This exercise teaches “Data De-duplication.” In real-world data science, datasets are often “messy” with repeating entries. Mastering the conversion between Lists (which allow duplicates) and Sets (which do not) is the fastest way to clean data.",
+    "given input": "data = [1, 2, 2, 3, 4, 4, 4, 5]",
+    "expected output": "Unique List: [1, 2, 3, 4, 5]"
+  },
+  {
+    "title": "List Comparison and Boolean Logic",
+    "practice problem": "Write a function to return True if the first and last number of a given list is the same. If the numbers are different, return False.",
+    "exercise purpose": "This exercise introduces “Collection Indexing” and “Boolean Flags.” Comparing data structure boundaries is common in pattern matching and data integrity checks.",
+    "given input": "numbers_x = [10, 20, 30, 40, 10]\nnumbers_y = [75, 65, 35, 75, 30]",
+    "expected output": "Given list: [75, 65, 35, 75, 30] | result is False\nGiven list: [10, 20, 30, 40, 10] | result is True"
+  },
+  {
+    "title": "Filtering Lists with Conditional Logic",
+    "practice problem": "Iterate through a given list of numbers and print only those numbers which are divisible by 5.",
+    "exercise purpose": "This exercise teaches the use of the modulo operator (%) and loop filtering. In data processing, you often need to sift through large datasets to extract subsets that meet mathematical criteria.",
+    "given input": "num_list = [10, 20, 33, 46, 55]",
+    "expected output": "Divisible by 5:\n10, 20, 55"
+  },
+  {
+    "title": "Substring Frequency Analysis",
+    "practice problem": "Write a program to find how many times the substring “Emma” appears in a given string.",
+    "exercise purpose": "Text analysis and pattern matching are core pillars of programming. This exercise introduces searching for a “needle in a haystack,” a fundamental concept for building search engines or data validation tools.",
+    "given input": "str_x = \"Emma is good developer. Emma is a writer\"",
+    "expected output": "Emma appeared 2 times"
+  },
+  {
+    "title": "Nested Loops for Pattern Generation",
+    "practice problem": "Print the following pattern where each row contains a number repeated a specific number of times based on its value.\n1\n2 2\n3 3 3\n4 4 4 4\n5 5 5 5 5",
+    "exercise purpose": "Pattern printing is a classic way to learn “Nested Loops.” You coordinate an outer loop for rows and an inner loop for columns or repetitions. This improves spatial logic and control over output formatting.",
+    "given input": "Range: 1 to 5",
+    "expected output": "(The pattern shown above)"
+  },
+  {
+    "title": "Numerical Palindrome Check",
+    "practice problem": "Write a program to check if a given number is a palindrome (reads the same forwards and backwards).",
+    "exercise purpose": "This exercise introduces the idea of “Reversing Logic.” Reversing a string is simple, but reversing an integer takes some math, like using division and modulo, or changing its type. This shows how data types can work differently.",
+    "given input": "Case 1: number = 121\nCase 2: number = 125",
+    "expected output": "Number 125 is not palindrome number\nNumber 121 is palindrome number"
+  },
+  {
+    "title": "Merging Lists with Parity Filtering",
+    "practice problem": "Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.",
+    "exercise purpose": "",
+    "given input": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]",
+    "expected output": "[25, 35, 40, 60, 90]"
+  },
+  {
+    "title": "Integer Digit Extraction and Reversal",
+    "practice problem": "Write a program to extract each digit from an integer in the reverse order.",
+    "exercise purpose": "This exercise explores “Mathematical Parsing.” Instead of converting a number to a string, use the modulo operator (%) and floor division (//) to isolate digits. This is common in low-level programming and algorithm challenges where type conversion is restricted.",
+    "given input": "number = 7536",
+    "expected output": "6 3 5 7"
+  },
+  {
+    "title": "Multi-Tiered Income Tax Calculation",
+    "practice problem": "Calculate income tax for a given income based on these rules:\nFirst $10,000: 0% tax\nNext $10,000: 10% tax\nRemaining income: 20% tax",
+    "exercise purpose": "This exercise introduces “Tax Brackets” logic, a classic example of complex conditional branching. It shows how to calculate values cumulatively instead of applying a single percentage to the entire amount.",
+    "given input": "income = 45000",
+    "expected output": "Total income tax to pay is 6000"
+  },
+  {
+    "title": "Nested Loops for Multiplication Tables",
+    "practice problem": "Print a multiplication table from 1 to 10 in a formatted grid.",
+    "exercise purpose": "To master “Matrix Generation.” This builds on the nested loop concepts from Exercise 8 and applies them to generate a structured data table. This is essential for understanding how to populate 2D arrays or generate spreadsheets.",
+    "given input": "Range: 1 to 10",
+    "expected output": "1  2  3  4  5  6  7  8  9  10\n2  4  6  8  10 12 14 16 18 20\n... (up to 10)"
+  },
+  {
+    "title": "Downward Half-Pyramid Pattern",
+    "practice problem": "Print a downward half-pyramid pattern using stars (*).",
+    "exercise purpose": "Learn about reverse indexing. Controlling loop boundaries in reverse is important for algorithms that process data from end to beginning.",
+    "given input": "Rows: 5",
+    "expected output": "* * * * *\n* * * *\n* * *\n* *\n*"
+  },
+  {
+    "title": "Custom Exponentiation Function",
+    "practice problem": "Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.",
+    "exercise purpose": "Learn about “Accumulator Patterns.” Although Python has a built-in power operator (**), making your own version shows how repeated multiplication works and how functions return results to the main program.",
+    "given input": "base = 2, exp = 5",
+    "expected output": "2 raises to the power of 5: 32"
+  },
+  {
+    "title": "Check Palindrome Number",
+    "practice problem": "Write a program to check if a given number is a palindrome. A palindrome number remains the same when its digits are reversed (e.g., 121, 545).",
+    "exercise purpose": "This exercise teaches “Algorithmic Reversal.” While strings are easy to reverse in Python, reversing a number mathematically using the modulo (%) and floor division (//) operators deepens understanding of how integers are stored in memory and how to manipulate digits individually.",
+    "given input": "number = 121",
+    "expected output": "Original number 121\nYes. given number is palindrome number"
+  },
+  {
+    "title": "Generate Fibonacci Series",
+    "practice problem": "Write a program to print the first 15 terms of the Fibonacci series. The sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones.",
+    "exercise purpose": "The Fibonacci sequence is a classic way to learn about state management in loops. You keep track of two changing variables at once to find the next number, which helps you see how data moves through each step.",
+    "given input": "Terms = 15",
+    "expected output": "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377"
+  },
+  {
+    "title": "Check Leap Year",
+    "practice problem": "Write a program that takes a year as input and determines if it is a leap year.\nA leap year is a year in the Gregorian calendar that contains an extra day, making it 366 days long instead of the usual 365. This extra day, February 29th, is added to keep the calendar synchronized with the Earth’s revolution around the Sun.\nRules for leap years: a year is a leap year if it’s divisible by 4, unless it’s also divisible by 100 but not by 400.",
+    "exercise purpose": "This exercise is vital for mastering “Complex Conditional Logic.” A leap year isn’t just “every 4 years”; there are specific exceptions for century years. This forces the programmer to use nested if statements or compound logical operators (and/or).",
+    "given input": "year = 2024",
+    "expected output": "2024 is a leap year"
+  },
+  {
+    "title": "Merging Two Dictionaries",
+    "practice problem": "Write a program that takes two separate dictionaries and merges them into one single dictionary.",
+    "exercise purpose": "This introduces “Key-Value Consolidation.” Merging dictionaries is a common task when combining configuration files or user profiles. It also teaches you about “Key Overwriting”—what happens when both dictionaries share the same key.",
+    "given input": "dict1 = {\"name\": \"Alice\", \"age\": 25}\ndict2 = {\"city\": \"New York\", \"job\": \"Engineer\"}Code language: Python (python)",
+    "expected output": "{'name': 'Alice', 'age': 25, 'city': 'New York', 'job': 'Engineer'}"
+  },
+  {
+    "title": "Finding Common Elements (Intersections)",
+    "practice problem": "Take two lists and find the elements that appear in both. Use Sets to perform the operation.",
+    "exercise purpose": "This exercise explores “Mathematical Set Operations.” Finding intersections is vital for recommendation engines (e.g., finding “mutual friends” or “shared interests”). It demonstrates why using the right data structure (Set) is more efficient than nested loops.",
+    "given input": "list_a = [1, 2, 3, 4, 5]\nlist_b = [4, 5, 6, 7, 8]Code language: Python (python)",
+    "expected output": "Common Elements: {4, 5}"
+  },
+  {
+    "title": "Odd/Even List Splitter",
+    "practice problem": "Start with a list of 10 numbers. Iterate through them and sort them into two separate lists: one for even numbers and one for odd numbers.",
+    "exercise purpose": "",
+    "given input": "numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]",
+    "expected output": "Even numbers: [12, 34, 10, 8, 2]\nOdd numbers: [7, 21, 5, 3, 19]"
+  },
+  {
+    "title": "Word Length Analysis",
+    "practice problem": "Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.",
+    "exercise purpose": "This exercise introduces “Metadata Extraction.” Often, you aren’t just interested in the data itself, but in its properties. In web development, this logic is used to validate if a user’s password or username meets specific length requirements.",
+    "given input": "words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]",
+    "expected output": "Apple - 5 Banana - 6 Cherry - 6 Date - 4 Elderberry - 10"
+  },
+  {
+    "title": "Word Frequency Counter (The Histogram)",
+    "practice problem": "Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary.",
+    "exercise purpose": "This is a classic “Natural Language Processing” (NLP) task. It teaches you how to map data to occurrences, which is the logic used by search engines to index web pages or by social media platforms to identify trending hashtags.",
+    "given input": "text = \"apple banana apple cherry banana apple\"",
+    "expected output": "{'apple': 3, 'banana': 2, 'cherry': 1}"
+  },
+  {
+    "title": "Print Alternate Prime Numbers",
+    "practice problem": "Write a program to find all prime numbers up to 20, but only print every second (alternate) prime number found.",
+    "exercise purpose": "This exercise combines “Nested Loops” (to check for primality) with “Step Logic.” It requires the programmer to first identify a subset of data and then apply a secondary filter, a common task in data reporting.",
+    "given input": "Limit = 20",
+    "expected output": "2, 5, 11, 17"
+  },
+  {
+    "title": "Dictionary of Squares (Mapping Logic)",
+    "practice problem": "Create a dictionary where the keys are numbers from 1 to 10 and the values are the squares of those numbers (e.g., 2: 4, 3: 9).",
+    "exercise purpose": "This exercise explores “Data Mapping.” It demonstrates how dictionaries can be used to store pre-calculated mathematical relationships, essentially acting as a “lookup table” that can replace expensive repetitive calculations.",
+    "given input": "Range: 1 to 10",
+    "expected output": "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}"
+  },
+  {
+    "title": "Character Replacer (Data Sanitization)",
+    "practice problem": "Ask the user for a sentence. Replace every empty space in that sentence with an underscore (_) and print the final result.",
+    "exercise purpose": "This exercise focuses on “String Sanitization.” In web development and file management, spaces are often problematic (especially in URLs or file paths). Learning to replace characters is a critical skill for preparing data for storage or transmission.",
+    "given input": "\"I love coding in Python\"",
+    "expected output": "I_love_coding_in_Python"
+  },
+  {
+    "title": "Print Reverse Number Pattern",
+    "practice problem": "Print a downward number pattern where each row starts with a decreasing value.",
+    "exercise purpose": "In this exercise, you will learn about range control and practice using negative steps in loops to move backwards. This skill is important for algorithms that process data from the end of a file to the beginning.",
+    "given input": "Rows = 5",
+    "expected output": "5 4 3 2 1\n4 3 2 1\n3 2 1\n2 1\n1"
+  },
+  {
+    "title": "Digit Detection in Strings",
+    "practice problem": "Write a program to check if a user-entered string contains any numeric digits. Use a for loop to examine each character.",
+    "exercise purpose": "This exercise will help you learn about string traversal and character analysis. In software development, these skills are important for tasks like checking if a username has forbidden characters or if a password is complex enough.",
+    "given input": "input_string = \"Python3\"",
+    "expected output": "The string 'Python3' contains digits: True"
+  },
+  {
+    "title": "Capitalize First Letter (Title Case)",
+    "practice problem": "Write a program to capitalize the first letter of each word in a given string without using the built-in .title() method.",
+    "exercise purpose": "In this exercise, you will learn about “Tokenization” and “String Re-assembly.” You will split a sentence into words, change them, and then put the sentence back together. This helps you practice working with complex data structures.",
+    "given input": "text = \"hello world from python\"",
+    "expected output": "Hello World From Python"
+  },
+  {
+    "title": "Simple Countdown Timer",
+    "practice problem": "Create a countdown timer that starts from a given number and counts down to zero using a while loop.",
+    "exercise purpose": "In this exercise, you will learn about loop termination logic and time delay management. Knowing how to control the flow of your code in real time is important for making animations, game loops, or automated scripts.",
+    "given input": "start_count = 5",
+    "expected output": "5 4 3 2 1 Blast off!"
+  },
+  {
+    "title": "File Creation and Basic I/O",
+    "practice problem": "Write a program that creates a new text file named notes.txt, writes three separate lines of text to it, and then reads that file back to display the contents in the console.",
+    "exercise purpose": "This exercise introduces “Persistent Storage.” Unlike variables that disappear when the program stops, files allow you to save data to the hard drive. Learning the open(), write(), and read() workflow is essential for building logging systems and saving user settings.",
+    "given input": "Lines to write:\n“Hello, this is my first note.”\n“Python file handling is simple.”\n“End of file.”",
+    "expected output": "notes.txt\nHello, this is my first note.\nPython file handling is simple.\nEnd of file."
+  },
+  {
+    "title": "External File Word Counter",
+    "practice problem": "Write a script that opens an existing .txt file and counts the total number of words it contains.",
+    "exercise purpose": "This exercise teaches “Data Parsing.” In professional environments, you rarely work with data you typed into the code yourself; you almost always pull data from external sources. This script simulates basic text-mining techniques used to analyze documents or logs.",
+    "given input": "An external file sample.txt containing: “Coding is the language of the future.”",
+    "expected output": "The file contains 7 words."
+  },
+  {
+    "title": "Introduction to Classes (OOP)",
+    "practice problem": "Create a Car class with attributes for make, model, and year. Include a method called start_engine() that prints a formatted string describing the car starting up.",
+    "exercise purpose": "This exercise introduces Object-Oriented Programming (OOP). Instead of just writing functions, you are creating a “Blueprint” (the Class) to generate “Objects” (the specific cars). This is how modern software is built, allowing you to organize code into logical, reusable components.",
+    "given input": "Make: “Toyota”, Model: “Camry”, Year: 2022",
+    "expected output": "The 2022 Toyota Camry's engine is now running!"
+  }
+]

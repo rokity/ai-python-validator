@@ -9,6 +9,15 @@ class PythonSyntaxValidatorFactory:
         self.model = model
         self.llama_service = LlamaCppService(model_name=self.model)
 
+    def validate_syntax(self, code: list[str]):
+        with self.llama_service.session():
+            for implementation in code:
+                python_prompt = PromptSyntaxValidatorRepository(
+                    language="python", code=implementation
+                ).assemble_prompt()
+                response = self.llama_service.chat(python_prompt)
+                return response
+
     def validate(self, code: list[str], results: list[bool]):
         failed, success = 0, 0
         with self.llama_service.session():

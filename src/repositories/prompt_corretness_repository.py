@@ -20,7 +20,7 @@ class PromptCorrectnessRepository(PromptRepository):
         )
 
     @staticmethod
-    def _check_response(response: str) -> bool | None:
+    def _check_response(response: str) -> bool:
         text = response.lower().strip()
         if re.search(r"\bincorrect\b", text, re.IGNORECASE):
             return False

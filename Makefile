@@ -21,3 +21,9 @@ validate:
 
 lint:
 	source venv/bin/activate && ruff format src/
+
+run_frontend:
+	cd frontend/my-react-router-app && npm run dev
+
+run_backend:
+	cd src/api && python -m fastapi dev

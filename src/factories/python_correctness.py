@@ -13,6 +13,20 @@ class PythonCorrectnessFactory:
         # self.results = results
         self.llama_service = LlamaCppService(model_name=self.model)
 
+    def validate_implementation(
+        self, implementations: list[dict[str, str]]
+    ) -> list[str]:
+        with self.llama_service.session():
+            for implementation_dict in implementations:
+                statement = implementation_dict["statement"]
+                python_prompt = PromptCorrectnessRepository(
+                    language="python",
+                    code=implementation_dict["code"],
+                    exercise=statement,
+                ).assemble_prompt()
+                response = self.llama_service.chat(python_prompt)
+                return response
+
     def validate(self, implementations: list[dict[str, str, str]]) -> list[str]:
         failed, success = 0, 0
         with self.llama_service.session():
