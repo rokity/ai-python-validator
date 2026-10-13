@@ -48,7 +48,7 @@ class PromptComplexityRepository(PromptRepository):
         )
 
     @staticmethod
-    def _check_response(response: str) -> str | None:
+    def _check_response(response: str) -> str:
         """Normalize the model answer into one of COMPLEXITY_CLASSES, or None."""
         if not response:
             return None
@@ -59,6 +59,6 @@ class PromptComplexityRepository(PromptRepository):
         return None
 
     @staticmethod
-    def normalize(complexity: str) -> str | None:
+    def normalize(complexity: str) -> str:
         """Normalize an expected complexity label written by a human."""
         return PromptComplexityRepository._check_response(complexity)
