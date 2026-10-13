@@ -11,6 +11,7 @@ MODELS = [
     "ggml-org/gemma-3-4b-it-GGUF",  # 0.89 accuracy, failed 18, success 142
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",  # 0.89 accuracy, falliti 17, success 143
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",  # 0.85, failed 24, success 136
+    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M", # 0.92 accuracy
 ]
 
 
@@ -27,7 +28,7 @@ def is_valid_syntax(code: str) -> bool:
     return True
 
 
-def main(model: str = MODELS[0]) -> None:
+def main(model: str = MODELS[4]) -> None:
     items = load_config("implementation.json")["items"]
     implementations = [impl for item in items for impl in item["implementations"]]
     code = [impl["code"] for impl in implementations]

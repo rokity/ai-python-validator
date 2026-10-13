@@ -10,6 +10,7 @@ MODELS = [
     "ggml-org/gemma-3-4b-it-GGUF",  # 0.80 accuracy, failed 32, success 128
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",  # 0.76 accuracy, failed 38, success 122
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",  # 0.89 accuracy, failed 18, success 142
+    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M", # 1.00 accuracy
 ]
 
 
@@ -18,7 +19,7 @@ def load_config(name: str) -> dict:
         return json.load(handle)
 
 
-def main(model: str = MODELS[0]) -> None:
+def main(model: str = MODELS[4]) -> None:
     exercises = load_config("implementation.json")["items"]
     implementations = [
         {

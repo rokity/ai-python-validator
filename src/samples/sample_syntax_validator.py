@@ -12,6 +12,7 @@ MODELS = [
     "ggml-org/gemma-3-4b-it-GGUF",
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M",
 ]
 if __name__ == "__main__":
     code_to_validate = "def x():\n    "
