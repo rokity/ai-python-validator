@@ -36,4 +36,4 @@ if __name__ == "__main__":
     validation_result = factory.validate(
         implementations=IMPLEMENTATIONS,
     )
-    print("Final validation result:", validation_result)
+    print(validation_result.format("Correctness validation results"))

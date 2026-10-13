@@ -22,6 +22,14 @@ make sample_correctness_validator
 - `make sample_correctness_exercises`: Run one exercise to evalute the correctness of python challenges.
 - `make sample_complexity_exercises`: Run a batch of snippets to evaluate the time complexity (Big-O) classification against the expected one.
 
+### Metrics
+
+Every experiment prints the same classification report, built by `src/metrics/classification.py`:
+accuracy, per class precision/recall/F1 with support, plus macro and weighted (by support) averages.
+Averages are computed only over the classes present in the ground truth; answers the model did not
+express in the expected format are collected in the `UNPARSED` pseudo class, so they always count as
+errors and never inflate the precision of a real class.
+
 # Run the Interactive Validator
 
 ```bash

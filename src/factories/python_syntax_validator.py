@@ -1,3 +1,4 @@
+from src.metrics.classification import ClassificationReport, compute_report
 from src.repositories.prompt_syntax_validator_repository import (
     PromptSyntaxValidatorRepository,
 )
@@ -18,10 +19,10 @@ class PythonSyntaxValidatorFactory:
                 response = self.llama_service.chat(python_prompt)
                 return response
 
-    def validate(self, code: list[str], results: list[bool]):
-        failed, success = 0, 0
+    def validate(self, code: list[str], results: list[bool]) -> ClassificationReport:
+        pairs: list[tuple[object, object]] = []
         with self.llama_service.session():
-            for implementation in code:
+            for index, implementation in enumerate(code):
                 python_prompt = PromptSyntaxValidatorRepository(
                     language="python", code=implementation
                 ).assemble_prompt()
@@ -29,13 +30,12 @@ class PythonSyntaxValidatorFactory:
                 response_check = PromptSyntaxValidatorRepository._check_response(
                     response
                 )
-                if response_check != results[code.index(implementation)]:
+                expected = results[index]
+                if response_check != expected:
                     print("Generated prompt for validation:\n", python_prompt)
                     print("LLM response:\n", response)
                     print(
-                        f"Validation mismatch. Expected: {results[code.index(implementation)]}, Got: {response_check}"
+                        f"Validation mismatch. Expected: {expected}, Got: {response_check}"
                     )
-                    failed += 1
-                else:
-                    success += 1
-        return failed, success
+                pairs.append((expected, response_check))
+        return compute_report(pairs)

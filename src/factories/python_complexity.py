@@ -1,3 +1,4 @@
+from src.metrics.classification import ClassificationReport, compute_report
 from src.repositories.prompt_complexity_repository import PromptComplexityRepository
 from src.services.llamacpp import LlamaCppService
 
@@ -22,8 +23,8 @@ class PythonComplexityFactory:
                 response = self._ask(implementation_dict)
                 return PromptComplexityRepository._check_response(response)
 
-    def validate(self, implementations: list[dict[str, str]]) -> tuple[int, int]:
-        failed, success = 0, 0
+    def validate(self, implementations: list[dict[str, str]]) -> ClassificationReport:
+        pairs: list[tuple[object, object]] = []
         with self.llama_service.session():
             for implementation_dict in implementations:
                 response = self._ask(implementation_dict)
@@ -36,7 +37,5 @@ class PythonComplexityFactory:
                         f"Complexity mismatch. Expected: {expected}, Got: {response_check}"
                     )
                     print("LLM response:\n", response)
-                    failed += 1
-                else:
-                    success += 1
-        return failed, success
+                pairs.append((expected, response_check))
+        return compute_report(pairs)

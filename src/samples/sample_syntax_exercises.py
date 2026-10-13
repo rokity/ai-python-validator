@@ -34,12 +34,8 @@ def main(model: str = MODELS[0]) -> None:
     expected = [is_valid_syntax(snippet) for snippet in code]
 
     factory = PythonSyntaxValidatorFactory(model=model)
-    failed, success = factory.validate(code=code, results=expected)
-
-    print(f"Validation results: failed={failed}, success={success}")
-    print(
-        f"Accuracy of the model correctness/ total: {success / (failed + success) if (failed + success) > 0 else 0:.2f}"
-    )
+    report = factory.validate(code=code, results=expected)
+    print(report.format("Syntax validation results"))
 
 
 if __name__ == "__main__":

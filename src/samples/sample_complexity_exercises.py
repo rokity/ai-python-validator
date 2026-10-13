@@ -6,10 +6,10 @@ from src.factories.python_complexity import PythonComplexityFactory
 CONFIG_DIR = Path(__file__).parent / "configs"
 
 MODELS = [
-    "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF:IQ2_XS", # Accuracy 0.36
+    "bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF:IQ2_XS",  # Accuracy 0.36
     "ggml-org/gemma-3-4b-it-GGUF",  # Accuracy 0.86
-    "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF", # Accuracy 1.00
-    "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF", #Accuracy 0,93
+    "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",  # Accuracy 1.00
+    "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",  # Accuracy 0,93
 ]
 
 
@@ -31,12 +31,8 @@ def main(model: str = MODELS[3]) -> None:
     ]
 
     factory = PythonComplexityFactory(model=model)
-    failed, success = factory.validate(implementations=implementations)
-
-    print(f"Validation results: failed={failed}, success={success}")
-    print(
-        f"Accuracy of the model complexity/ total: {success / (failed + success) if (failed + success) > 0 else 0:.2f}"
-    )
+    report = factory.validate(implementations=implementations)
+    print(report.format("Complexity validation results"))
 
 
 if __name__ == "__main__":

@@ -135,7 +135,7 @@
         { "id": "15a", "label": true, "code": "for i in range(1, 6):\n    for j in range(i):\n        print(i, end=\" \")\n    print()" },
         { "id": "15b", "label": true, "code": "for i in range(1, 6):\n    print(\" \".join([str(i)] * i))" },
         { "id": "15c", "label": false, "code": "for i in range(1, 6):\n    for j in range(5):\n        print(i, end=\" \")\n    print()" },
-        { "id": "15d", "label": true, "code": "for i in range(1, 6):\n    print((str(i) + \" \") * i" }
+        { "id": "15d", "label": false, "code": "for i in range(1, 6):\n    print((str(i) + \" \") * i" }
       ]
     },
     {
@@ -153,7 +153,7 @@
         { "id": "17a", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nresult = [n for n in list1 if n % 2 != 0] + [n for n in list2 if n % 2 == 0]\nprint(result)" },
         { "id": "17b", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nresult = []\nfor n in list1:\n    if n % 2 == 1:\n        result.append(n)\nfor n in list2:\n    if n % 2 == 0:\n        result.append(n)\nprint(result)" },
         { "id": "17c", "label": false, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nprint([n for n in list1 if n % 2 == 0] + [n for n in list2 if n % 2 != 0])" },
-        { "id": "17d", "label": true, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nprint([n for n in list1 if n % 2] + [n for n in list2 if not n % 2]" }
+        { "id": "17d", "label": false, "code": "list1 = [10, 20, 25, 30, 35]\nlist2 = [40, 45, 60, 75, 90]\nprint([n for n in list1 if n % 2] + [n for n in list2 if not n % 2]" }
       ]
     },
     {
@@ -306,7 +306,7 @@
         { "id": "34a", "label": true,  "code": "rows = 5\nfor i in range(rows, 0, -1):\n    for j in range(i, 0, -1):\n        print(j, end=\" \")\n    print()" },
         { "id": "34b", "label": true, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(\" \".join(str(j) for j in range(i, 0, -1)))" },
         { "id": "34c", "label": false, "code": "rows = 5\nfor i in range(1, rows + 1):\n    for j in range(1, i + 1):\n        print(j, end=\" \")\n    print()" },
-        { "id": "34d", "label": true, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(*range(i, 0, -1)\n" }
+        { "id": "34d", "label": false, "code": "rows = 5\nfor i in range(rows, 0, -1):\n    print(*range(i, 0, -1)\n" }
       ]
     },
     {

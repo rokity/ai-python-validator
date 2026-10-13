@@ -31,12 +31,8 @@ def main(model: str = MODELS[0]) -> None:
     ]
 
     factory = PythonCorrectnessFactory(model=model)
-    failed, success = factory.validate(implementations=implementations)
-
-    print(f"Validation results: failed={failed}, success={success}")
-    print(
-        f"Accuracy of the model correctness/ total: {success / (failed + success) if (failed + success) > 0 else 0:.2f}"
-    )
+    report = factory.validate(implementations=implementations)
+    print(report.format("Correctness validation results"))
 
 
 if __name__ == "__main__":

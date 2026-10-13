@@ -1,3 +1,4 @@
+from src.metrics.classification import ClassificationReport, compute_report
 from src.repositories.prompt_corretness_repository import PromptCorrectnessRepository
 from src.services.llamacpp import LlamaCppService
 
@@ -27,8 +28,10 @@ class PythonCorrectnessFactory:
                 response = self.llama_service.chat(python_prompt)
                 return response
 
-    def validate(self, implementations: list[dict[str, str, str]]) -> list[str]:
-        failed, success = 0, 0
+    def validate(
+        self, implementations: list[dict[str, str, str]]
+    ) -> ClassificationReport:
+        pairs: list[tuple[object, object]] = []
         with self.llama_service.session():
             for implementation_dict in implementations:
                 statement = implementation_dict["statement"]
@@ -45,7 +48,5 @@ class PythonCorrectnessFactory:
                         f"Validation mismatch. Expected: {implementation_dict['label']}, Got: {response_check}"
                     )
                     print("LLM response:\n", response)
-                    failed += 1
-                else:
-                    success += 1
-        return failed, success
+                pairs.append((implementation_dict["label"], response_check))
+        return compute_report(pairs)

@@ -17,4 +17,4 @@ if __name__ == "__main__":
     code_to_validate = "def x():\n    "
     factory = PythonSyntaxValidatorFactory(model=MODELS[2])
     validation_result = factory.validate(code=CODE_TO_VALIDATE, results=RESULTS)
-    print("Final validation result:", validation_result)
+    print(validation_result.format("Syntax validation results"))
