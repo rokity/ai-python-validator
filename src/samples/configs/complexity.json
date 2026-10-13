@@ -1,0 +1,116 @@
+{
+  "source": "hand written snippets for time complexity benchmarking",
+  "note": "Each implementation declares the expected worst case time complexity, where n is the size of the processed input.",
+  "items": [
+    {
+      "statement": "Write a Python function that returns the sum of two numbers.",
+      "implementations": [
+        {
+          "id": "c1a",
+          "complexity": "O(1)",
+          "code": "def add(a, b):\n    return a + b"
+        },
+        {
+          "id": "c1b",
+          "complexity": "O(n)",
+          "code": "def add(a, b):\n    total = a\n    for _ in range(b):\n        total += 1\n    return total"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that returns the sum of all the items of a list.",
+      "implementations": [
+        {
+          "id": "c2a",
+          "complexity": "O(n)",
+          "code": "def total(items):\n    acc = 0\n    for item in items:\n        acc += item\n    return acc"
+        },
+        {
+          "id": "c2b",
+          "complexity": "O(n^2)",
+          "code": "def total(items):\n    acc = 0\n    for i in range(len(items)):\n        for j in range(i, len(items)):\n            if j == i:\n                acc += items[j]\n    return acc"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that tells whether a value is present in a sorted list.",
+      "implementations": [
+        {
+          "id": "c3a",
+          "complexity": "O(log n)",
+          "code": "def contains(sorted_items, target):\n    low, high = 0, len(sorted_items) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if sorted_items[mid] == target:\n            return True\n        if sorted_items[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return False"
+        },
+        {
+          "id": "c3b",
+          "complexity": "O(n)",
+          "code": "def contains(sorted_items, target):\n    for item in sorted_items:\n        if item == target:\n            return True\n    return False"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that sorts a list of numbers in ascending order.",
+      "implementations": [
+        {
+          "id": "c4a",
+          "complexity": "O(n log n)",
+          "code": "def sort_numbers(items):\n    return sorted(items)"
+        },
+        {
+          "id": "c4b",
+          "complexity": "O(n^2)",
+          "code": "def sort_numbers(items):\n    data = list(items)\n    for i in range(len(data)):\n        for j in range(len(data) - 1):\n            if data[j] > data[j + 1]:\n                data[j], data[j + 1] = data[j + 1], data[j]\n    return data"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that returns the n-th Fibonacci number.",
+      "implementations": [
+        {
+          "id": "c5a",
+          "complexity": "O(n)",
+          "code": "def fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a"
+        },
+        {
+          "id": "c5b",
+          "complexity": "O(2^n)",
+          "code": "def fib(n):\n    if n < 2:\n        return n\n    return fib(n - 1) + fib(n - 2)"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that returns all the permutations of a list.",
+      "implementations": [
+        {
+          "id": "c6a",
+          "complexity": "O(n!)",
+          "code": "def permutations(items):\n    if len(items) <= 1:\n        return [list(items)]\n    result = []\n    for index, item in enumerate(items):\n        rest = items[:index] + items[index + 1:]\n        for permutation in permutations(rest):\n            result.append([item] + permutation)\n    return result"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that returns every triplet of a list whose sum is zero.",
+      "implementations": [
+        {
+          "id": "c7a",
+          "complexity": "O(n^3)",
+          "code": "def zero_triplets(items):\n    result = []\n    for i in range(len(items)):\n        for j in range(i + 1, len(items)):\n            for k in range(j + 1, len(items)):\n                if items[i] + items[j] + items[k] == 0:\n                    result.append((items[i], items[j], items[k]))\n    return result"
+        }
+      ]
+    },
+    {
+      "statement": "Write a Python function that tells whether a list contains duplicated values.",
+      "implementations": [
+        {
+          "id": "c8a",
+          "complexity": "O(n)",
+          "code": "def has_duplicates(items):\n    seen = set()\n    for item in items:\n        if item in seen:\n            return True\n        seen.add(item)\n    return False"
+        },
+        {
+          "id": "c8b",
+          "complexity": "O(n^2)",
+          "code": "def has_duplicates(items):\n    for i in range(len(items)):\n        for j in range(i + 1, len(items)):\n            if items[i] == items[j]:\n                return True\n    return False"
+        }
+      ]
+    }
+  ]
+}

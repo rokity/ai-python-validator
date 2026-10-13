@@ -18,6 +18,7 @@ export default function Exercise() {
     const [value, setValue] = useState("# Write here your solution");
     const [loading, setLoading] = useState(false);
     const [result, setResult] = useState<string | null>(null);
+    const [complexity, setComplexity] = useState<string | null>(null);
 
     const onChange = useCallback((val, viewUpdate) => {
         setValue(val);
@@ -35,6 +36,7 @@ export default function Exercise() {
         e.preventDefault();
         setLoading(true);
         setResult(null);
+        setComplexity(null);
         try {
             const res = await fetch(`http://localhost:8000/validate_exercise/`, {
                 method: 'POST',
@@ -49,6 +51,12 @@ export default function Exercise() {
                 setResult("EXERCISE INVALID");
             else
                 setResult("EXERCISE VALID");
+            if (data["complexity"])
+                setComplexity(
+                    data["expected_complexity"]
+                        ? `Time complexity: ${data["complexity"]} (expected ${data["expected_complexity"]})`
+                        : `Time complexity: ${data["complexity"]}`
+                );
         } catch (err) {
             console.error(err);
             setResult("ERROR");
@@ -94,6 +102,11 @@ export default function Exercise() {
                     {result && (
                         <span className={`ml-4 px-3 py-1 rounded font-semibold text-white ${result.includes(" VALID") ? "bg-green-600" : result.includes(" INVALID") ? "bg-red-600" : "bg-gray-600"}`}>
                             {result === "ERROR" ? "Error contacting the server" : result}
+                        </span>
+                    )}
+                    {complexity && (
+                        <span className="ml-4 px-3 py-1 rounded font-semibold text-white bg-slate-600">
+                            {complexity}
                         </span>
                     )}
                 </div>

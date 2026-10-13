@@ -10,6 +10,9 @@ sample_syntax_exercises:
 sample_correctness_exercises:
 	source venv/bin/activate && python -m src.samples.sample_correctness_exercises
 
+sample_complexity_exercises:
+	source venv/bin/activate && python -m src.samples.sample_complexity_exercises
+
 install:
 	source venv/bin/activate && pip install -r requirements.txt	
 

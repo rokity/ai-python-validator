@@ -20,6 +20,7 @@ make sample_correctness_validator
 - `make sample_correctness_validator`: Run several exercises to evalute the correctness of python challenges.
 - `make sample_syntax_validator`: Validate the syntax of a little batch of python code.
 - `make sample_correctness_exercises`: Run one exercise to evalute the correctness of python challenges.
+- `make sample_complexity_exercises`: Run a batch of snippets to evaluate the time complexity (Big-O) classification against the expected one.
 
 # Run the Interactive Validator
 

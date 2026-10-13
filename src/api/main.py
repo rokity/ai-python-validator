@@ -1,6 +1,8 @@
 from src.factories.serving_exercises import ServingExercisesFactory
 from src.factories.python_syntax_validator import PythonSyntaxValidatorFactory
 from src.factories.python_correctness import PythonCorrectnessFactory
+from src.factories.python_complexity import PythonComplexityFactory
+from src.repositories.prompt_complexity_repository import PromptComplexityRepository
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -41,12 +43,13 @@ def validate_exercise(request: RequestExerciseSyntaxValidation):
     factory = PythonSyntaxValidatorFactory(model=MODELS[2])
     validation_result = factory.validate_syntax(code=[request.code])
     if validation_result == "INVALID":
-        return {"syntax": "INVALID", "correctness": None}
+        return {"syntax": "INVALID", "correctness": None, "complexity": None}
     else:
         correctness_factory = PythonCorrectnessFactory(MODELS[2])
-        statement = ServingExercisesFactory().get_exercise(
+        exercise = ServingExercisesFactory().get_exercise(
             int(request.id), "beginner_exercises.json"
-        )["practice problem"]
+        )
+        statement = exercise["practice problem"]
         implementations = [
             {
                 "code": request.code,
@@ -54,7 +57,22 @@ def validate_exercise(request: RequestExerciseSyntaxValidation):
             }
         ]
         result = correctness_factory.validate_implementation(implementations)
-        return {"syntax": "VALID", "correctness": result}
+        complexity_factory = PythonComplexityFactory(MODELS[2])
+        complexity = complexity_factory.analyze_implementation(implementations)
+        expected_complexity = PromptComplexityRepository.normalize(
+            exercise.get("expected complexity", "")
+        )
+        return {
+            "syntax": "VALID",
+            "correctness": result,
+            "complexity": complexity,
+            "expected_complexity": expected_complexity,
+            "complexity_match": (
+                None
+                if expected_complexity is None or complexity is None
+                else complexity == expected_complexity
+            ),
+        }
 
 
 # @app.get("/items/{item_id}")
