@@ -258,14 +258,14 @@ def main() -> None:
     train.add_argument("--lora-dropout", type=float, default=0.05)
     train.set_defaults(handler=_training_command)
 
-    predict = commands.add_parser("predict", help="Classify a snippet using a saved LoRA adapter")
-    predict.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
-    predict.add_argument("--adapter", type=Path, required=True)
-    predict.add_argument("--code", required=True)
-    predict.add_argument("--max-length", type=int, default=2048)
-    predict.set_defaults(handler=_predict_command)
-    args = parser.parse_args()
-    args.handler(args)
+    # predict = commands.add_parser("predict", help="Classify a snippet using a saved LoRA adapter")
+    # predict.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
+    # predict.add_argument("--adapter", type=Path, required=True)
+    # predict.add_argument("--code", required=True)
+    # predict.add_argument("--max-length", type=int, default=2048)
+    # predict.set_defaults(handler=_predict_command)
+    # args = parser.parse_args()
+    # args.handler(args)
 
 
 if __name__ == "__main__":
