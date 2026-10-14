@@ -6,6 +6,8 @@ MODELS = [
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
     "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M",
+    "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
 ]
 EXERCISE_DESCRIPTION = "write a python function called 'sum' that returns the sum of two numbers passed as parameters."
 IMPLEMENTATIONS = [

@@ -13,6 +13,8 @@ MODELS = [
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
     "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M",
+    "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
 ]
 if __name__ == "__main__":
     code_to_validate = "def x():\n    "
