@@ -20,7 +20,7 @@ predict_bifi_syntax:
 	source venv/bin/activate && python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
 
 install:
-	source venv/bin/activate && pip install -r requirements.txt	
+	source venv/bin/activate && pip install --ignore-installed --no-deps --dry-run -r requirements.txt	
 
 freeze:
 	source venv/bin/activate && pip freeze > requirements.txt
@@ -36,3 +36,9 @@ run_frontend:
 
 run_backend:
 	cd src/api && python -m fastapi dev
+
+download_datasets:
+	mkdir data
+	mkdir data/bifi
+	curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
+	unzip data_minimal.zip -d data/bifi
