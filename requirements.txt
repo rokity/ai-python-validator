@@ -14,3 +14,9 @@ ruff==0.15.12
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.8.0
+# LoRA fine-tuning for the BIFI syntax pipeline.
+torch
+transformers>=4.46
+peft>=0.13
+datasets>=3.0
+accelerate>=1.0

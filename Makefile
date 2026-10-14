@@ -13,6 +13,12 @@ sample_correctness_exercises:
 sample_complexity_exercises:
 	source venv/bin/activate && python -m src.samples.sample_complexity_exercises
 
+train_bifi_syntax:
+	source venv/bin/activate && python -m src.training.bifi_syntax train --data $(DATA_DIR) $(if $(MODEL),--model $(MODEL))
+
+predict_bifi_syntax:
+	source venv/bin/activate && python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
+
 install:
 	source venv/bin/activate && pip install -r requirements.txt	
 

@@ -11,6 +11,35 @@ make sample_correctness_validator
 
 ```
 
+### BIFI syntax fine-tuning (LoRA)
+
+The optional training pipeline fine-tunes a causal code model with LoRA to classify
+Python fragments as `VALID` or `INVALID`. It reads the BIFI minimal archive after
+extraction; good and bad examples are loaded from `orig_good_code` and
+`orig_bad_code`, respectively. JSON records use their `code_string` field. The
+dataset is split into a seeded, stratified train/test split (10% test by default).
+
+```bash
+curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
+unzip data_minimal.zip -d data/bifi
+make install
+make train_bifi_syntax DATA_DIR=data/bifi/data
+make predict_bifi_syntax ADAPTER=models/bifi-syntax/adapter CODE='def f(:'
+```
+
+The default base model is `Qwen/Qwen2.5-Coder-1.5B-Instruct`; override it with
+`MODEL=...` on the Python command, for example:
+
+```bash
+python -m src.training.bifi_syntax train --data data/bifi --model Qwen/Qwen2.5-Coder-3B-Instruct
+python -m src.training.bifi_syntax predict --adapter models/bifi-syntax/adapter --code $'def f():\n    return 1'
+```
+
+The saved adapter is a Transformers/PEFT artifact, not a GGUF model: existing
+Ollama/llama.cpp services cannot load it directly. Training defaults are
+conservative and can be tuned with
+`--epochs`, `--batch-size`, `--max-length`, and other CLI options.
+
 
 ### Scripts 
 
