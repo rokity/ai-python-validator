@@ -20,8 +20,7 @@ extraction; good and bad examples are loaded from `orig_good_code` and
 dataset is split into a seeded, stratified train/test split (10% test by default).
 
 ```bash
-curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
-unzip data_minimal.zip -d data/bifi
+make download_datasets
 make install
 make train_bifi_syntax DATA_DIR=data/bifi/data
 make predict_bifi_syntax ADAPTER=models/bifi-syntax/adapter CODE='def f(:'

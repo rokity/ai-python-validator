@@ -13,8 +13,8 @@ ruff==0.15.12
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.6.3
-# torch
-# transformers>=4.46
-# peft>=0.13
-# datasets>=3.0
-# accelerate>=1.0
+torch
+transformers>=4.46
+peft>=0.13
+datasets>=3.0
+accelerate>=1.0
