@@ -14,7 +14,7 @@ sample_complexity_exercises:
 	source venv/bin/activate && python -m src.samples.sample_complexity_exercises
 
 train_bifi_syntax:
-	source venv/bin/activate && python -m src.training.bifi_syntax train --data $(DATA_DIR) $(if $(MODEL),--model $(MODEL))
+	source venv/bin/activate && python -m src.training.bifi_syntax train --data data/bifi/data $(if $(MODEL),--model $(MODEL)) --max-steps 20
 
 predict_bifi_syntax:
 	source venv/bin/activate && python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
