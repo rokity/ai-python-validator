@@ -11,7 +11,7 @@ MODELS = [
     "ggml-org/gemma-3-4b-it-GGUF",  # 0.89 accuracy, failed 18, success 142
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",  # 0.89 accuracy, falliti 17, success 143
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",  # 0.85, failed 24, success 136
-    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M", # 0.92 accuracy
+    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M",  # 0.92 accuracy
     "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
     "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
 ]

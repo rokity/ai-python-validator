@@ -24,13 +24,17 @@ LABELS = ("VALID", "INVALID")
 
 
 def _syntax_prompt(code: str) -> str:
-    return PromptSyntaxValidatorRepository(language="python", code=code).assemble_prompt()
+    return PromptSyntaxValidatorRepository(
+        language="python", code=code
+    ).assemble_prompt()
 
 
 def _chat_prompt(tokenizer: Any, code: str) -> str:
     """Same format the chat endpoint of llama-server applies at inference time."""
     messages = [{"role": "user", "content": _syntax_prompt(code)}]
-    return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    return tokenizer.apply_chat_template(
+        messages, tokenize=False, add_generation_prompt=True
+    )
 
 
 # --------------------------------------------------------------------------- data
@@ -67,7 +71,9 @@ def _iter_codes(path: Path) -> Iterator[str]:
             try:
                 import ijson
             except ImportError:
-                print(f"[warn] ijson not installed: loading {path.name} fully in RAM (pip install ijson)")
+                print(
+                    f"[warn] ijson not installed: loading {path.name} fully in RAM (pip install ijson)"
+                )
             else:
                 for item in ijson.items(handle, "item"):
                     code = item.get("code_string") if isinstance(item, dict) else None
@@ -111,7 +117,7 @@ def load_examples(
     per_class: int,
     max_chars: int,
     seed: int,
-    cache: Path ,
+    cache: Path | None = None,
 ) -> list[dict[str, str]]:
     """Balanced sample of VALID/INVALID examples (cached as JSONL after the first scan)."""
     if cache is not None and cache.is_file():
@@ -168,7 +174,13 @@ def _pick_dtype(torch: Any, name: str) -> Any:
     if name != "auto":
         return getattr(torch, name)
     if torch.cuda.is_available():
-        return torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+        # bfloat16 needs compute capability >= 8 (A100, L4, A10G, RTX 30xx+); T4 and P100
+        # do not have it. Use float32 there (optionally with --amp for mixed precision).
+        return (
+            torch.bfloat16
+            if torch.cuda.get_device_capability()[0] >= 8
+            else torch.float32
+        )
     # float16 gave NaN losses on Qwen2.5 (activation overflow): use float32 on MPS/CPU.
     # On Apple Silicon try --dtype bfloat16 to save memory, and watch the first 100 steps.
     return torch.float32
@@ -197,19 +209,30 @@ def _classify(model: Any, tokenizer: Any, code: str, max_length: int) -> str:
 
     prompt = _chat_prompt(tokenizer, code)
     inputs = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)
-    inputs = {key: value[:, -max_length:].to(model.device) for key, value in inputs.items()}
+    inputs = {
+        key: value[:, -max_length:].to(model.device) for key, value in inputs.items()
+    }
     with torch.no_grad():
         output = model.generate(
-            **inputs, max_new_tokens=4, do_sample=False, pad_token_id=tokenizer.pad_token_id
+            **inputs,
+            max_new_tokens=4,
+            do_sample=False,
+            pad_token_id=tokenizer.pad_token_id,
         )
-    answer = tokenizer.decode(output[0][inputs["input_ids"].shape[1] :], skip_special_tokens=True)
+    answer = tokenizer.decode(
+        output[0][inputs["input_ids"].shape[1] :], skip_special_tokens=True
+    )
     return _parse_answer(answer)
 
 
-def _evaluate(model: Any, tokenizer: Any, examples: list[dict[str, str]], max_length: int) -> None:
+def _evaluate(
+    model: Any, tokenizer: Any, examples: list[dict[str, str]], max_length: int
+) -> None:
     model.eval()
     model.config.use_cache = True
-    predictions = [_classify(model, tokenizer, example["code"], max_length) for example in examples]
+    predictions = [
+        _classify(model, tokenizer, example["code"], max_length) for example in examples
+    ]
     targets = [example["label"] for example in examples]
     correct = sum(pred == target for pred, target in zip(predictions, targets))
     print(f"Test accuracy: {correct / len(targets):.4f} ({correct}/{len(targets)})")
@@ -220,7 +243,9 @@ def _evaluate(model: Any, tokenizer: Any, examples: list[dict[str, str]], max_le
         fn = sum(p != label and t == label for p, t in zip(predictions, targets))
         precision = tp / (tp + fp) if tp + fp else 0.0
         recall = tp / (tp + fn) if tp + fn else 0.0
-        f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+        f1 = (
+            2 * precision * recall / (precision + recall) if precision + recall else 0.0
+        )
         print(f"{label}: precision={precision:.4f}, recall={recall:.4f}, f1={f1:.4f}")
 
 
@@ -246,7 +271,9 @@ def _training_command(args: argparse.Namespace) -> None:
             "transformers, peft, datasets, accelerate, ijson)."
         ) from exc
 
-    examples = load_examples(args.data, args.max_per_class, args.max_chars, args.seed, args.cache)
+    examples = load_examples(
+        args.data, args.max_per_class, args.max_chars, args.seed, args.cache
+    )
     train_examples, test_examples = split_examples(examples, args.test_size, args.seed)
     print(
         f"Loaded {len(examples)} examples: {len(train_examples)} train, "
@@ -285,14 +312,20 @@ def _training_command(args: argparse.Namespace) -> None:
         )["input_ids"]
         input_ids = prompt_ids + answer_ids
         labels = [-100] * len(prompt_ids) + answer_ids
-        return {"input_ids": input_ids, "attention_mask": [1] * len(input_ids), "labels": labels}
+        return {
+            "input_ids": input_ids,
+            "attention_mask": [1] * len(input_ids),
+            "labels": labels,
+        }
 
     def prepare(rows: list[dict[str, str]]) -> Any:
         data = Dataset.from_list(rows).map(tokenize, remove_columns=["code", "label"])
         before = len(data)
         # drop (never truncate): a truncated VALID snippet would look like a syntax error
         data = data.filter(lambda row: len(row["input_ids"]) <= args.max_length)
-        print(f"Dropped {before - len(data)}/{before} examples longer than {args.max_length} tokens")
+        print(
+            f"Dropped {before - len(data)}/{before} examples longer than {args.max_length} tokens"
+        )
         return data
 
     class StopOnDivergence(TrainerCallback):
@@ -303,8 +336,10 @@ def _training_command(args: argparse.Namespace) -> None:
             if logs and _diverged(logs):
                 self.diverged = True
                 control.should_training_stop = True
-                print(f"[error] NaN/inf at step {state.global_step}: stopping training. "
-                      "Try --dtype float32 (or bfloat16) and/or a lower --learning-rate.")
+                print(
+                    f"[error] NaN/inf at step {state.global_step}: stopping training. "
+                    "Try --dtype float32 (or bfloat16) and/or a lower --learning-rate."
+                )
 
     guard = StopOnDivergence()
     train_data = prepare(train_examples)
@@ -331,6 +366,7 @@ def _training_command(args: argparse.Namespace) -> None:
             metric_for_best_model="eval_loss",
             greater_is_better=False,
             dataloader_pin_memory=False,
+            fp16=args.amp,
             seed=args.seed,
             report_to="none",
         ),
@@ -382,46 +418,88 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     train = commands.add_parser("train", help="Fine-tune a causal LM with LoRA on BIFI")
-    train.add_argument("--data", type=Path, required=True, help="Extracted BIFI dataset directory")
+    train.add_argument(
+        "--data", type=Path, required=True, help="Extracted BIFI dataset directory"
+    )
     train.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
     train.add_argument("--output", type=Path, default=Path("models/bifi-syntax"))
-    train.add_argument("--cache", type=Path, default=Path("data/bifi_sample.jsonl"),
-                       help="JSONL cache of the sampled examples (delete it to resample)")
-    train.add_argument("--max-per-class", type=int, default=5000,
-                       help="Snippets sampled for each class (VALID/INVALID)")
-    train.add_argument("--max-chars", type=int, default=1500,
-                       help="Skip snippets longer than this many characters")
+    train.add_argument(
+        "--cache",
+        type=Path,
+        default=Path("data/bifi_sample.jsonl"),
+        help="JSONL cache of the sampled examples (delete it to resample)",
+    )
+    train.add_argument(
+        "--max-per-class",
+        type=int,
+        default=5000,
+        help="Snippets sampled for each class (VALID/INVALID)",
+    )
+    train.add_argument(
+        "--max-chars",
+        type=int,
+        default=1500,
+        help="Skip snippets longer than this many characters",
+    )
     train.add_argument("--test-size", type=float, default=0.1)
     train.add_argument("--seed", type=int, default=42)
     train.add_argument("--epochs", type=float, default=1)
-    train.add_argument("--max-steps", type=int, default=-1,
-                       help="If > 0, overrides --epochs (use e.g. 20 to measure speed)")
+    train.add_argument(
+        "--max-steps",
+        type=int,
+        default=-1,
+        help="If > 0, overrides --epochs (use e.g. 20 to measure speed)",
+    )
     train.add_argument("--batch-size", type=int, default=1)
     train.add_argument("--grad-accum", type=int, default=16)
     train.add_argument("--learning-rate", type=float, default=1e-4)
-    train.add_argument("--max-length", type=int, default=512,
-                       help="Max tokens per example; longer examples are dropped")
-    train.add_argument("--eval-steps", type=int, default=50,
-                       help="Evaluate and save a checkpoint every N steps")
-    train.add_argument("--resume", action="store_true",
-                       help="Resume from the last checkpoint in --output")
-    train.add_argument("--eval-samples", type=int, default=200,
-                       help="Test examples used for the eval loss during training")
-    train.add_argument("--dtype", default="auto",
-                       choices=["auto", "float32", "float16", "bfloat16"])
+    train.add_argument(
+        "--max-length",
+        type=int,
+        default=768,
+        help="Max tokens per example; longer examples are dropped",
+    )
+    train.add_argument(
+        "--eval-steps",
+        type=int,
+        default=50,
+        help="Evaluate and save a checkpoint every N steps",
+    )
+    train.add_argument(
+        "--resume",
+        action="store_true",
+        help="Resume from the last checkpoint in --output",
+    )
+    train.add_argument(
+        "--eval-samples",
+        type=int,
+        default=200,
+        help="Test examples used for the eval loss during training",
+    )
+    train.add_argument(
+        "--dtype", default="auto", choices=["auto", "float32", "float16", "bfloat16"]
+    )
+    train.add_argument(
+        "--amp",
+        action="store_true",
+        help="CUDA only: fp16 mixed precision with loss scaling (faster on T4/P100; keep weights in float32)",
+    )
     train.add_argument("--no-gradient-checkpointing", action="store_true")
     train.add_argument("--lora-rank", type=int, default=16)
     train.add_argument("--lora-alpha", type=int, default=32)
     train.add_argument("--lora-dropout", type=float, default=0.05)
     train.set_defaults(handler=_training_command)
 
-    predict = commands.add_parser("predict", help="Classify a snippet using a saved LoRA adapter")
+    predict = commands.add_parser(
+        "predict", help="Classify a snippet using a saved LoRA adapter"
+    )
     predict.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
     predict.add_argument("--adapter", type=Path, required=True)
     predict.add_argument("--code", required=True)
     predict.add_argument("--max-length", type=int, default=768)
-    predict.add_argument("--dtype", default="auto",
-                         choices=["auto", "float32", "float16", "bfloat16"])
+    predict.add_argument(
+        "--dtype", default="auto", choices=["auto", "float32", "float16", "bfloat16"]
+    )
     predict.set_defaults(handler=_predict_command)
     args = parser.parse_args()
     args.handler(args)

@@ -10,7 +10,7 @@ MODELS = [
     "ggml-org/gemma-3-4b-it-GGUF",  # Accuracy 0.86
     "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",  # Accuracy 1.00
     "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",  # Accuracy 0,93
-    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M", # Accuracy 1.00
+    "unsloth/GLM-4-9B-0414-GGUF:Q4_K_M",  # Accuracy 1.00
     "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
     "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
 ]

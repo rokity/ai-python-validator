@@ -1,35 +1,35 @@
 sample_syntax_validator:
-	source venv/bin/activate && python -m src.samples.sample_syntax_validator
+	python -m src.samples.sample_syntax_validator
 
 sample_correct:
-	source venv/bin/activate && python -m src.samples.sample_correctness
+	python -m src.samples.sample_correctness
 
 sample_syntax_exercises:
-	source venv/bin/activate && python -m src.samples.sample_syntax_exercises
+	python -m src.samples.sample_syntax_exercises
 
 sample_correctness_exercises:
-	source venv/bin/activate && python -m src.samples.sample_correctness_exercises
+	python -m src.samples.sample_correctness_exercises
 
 sample_complexity_exercises:
-	source venv/bin/activate && python -m src.samples.sample_complexity_exercises
+	python -m src.samples.sample_complexity_exercises
 
 train_bifi_syntax:
-	source venv/bin/activate && python -m src.training.bifi_syntax train --data data/bifi/data $(if $(MODEL),--model $(MODEL)) --max-steps 20
+	python -m src.training.bifi_syntax train --data data/bifi/data $(if $(MODEL),--model $(MODEL)) --max-steps 20
 
 predict_bifi_syntax:
-	source venv/bin/activate && python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
+	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
 
 install:
-	source venv/bin/activate && pip install --ignore-installed --no-deps --dry-run -r requirements.txt	
+	python -m pip install --ignore-installed --no-deps --dry-run -r requirements.txt	
 
 freeze:
-	source venv/bin/activate && pip freeze > requirements.txt
+	pip freeze > requirements.txt
 
 validate:
-	source venv/bin/activate && ruff check src 
+	ruff check src 
 
 lint:
-	source venv/bin/activate && ruff format src/
+	ruff format src/
 
 run_frontend:
 	cd frontend/my-react-router-app && npm run dev
