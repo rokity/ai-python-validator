@@ -16,6 +16,9 @@ sample_complexity_exercises:
 train_bifi_syntax:
 	python -m src.training.bifi_syntax train --data data/bifi/data --dtype float32 --amp $(ARGS)
 
+train_oncolab_bifi_syntax:
+	python -m src.training.bifi_syntax train --data data/bifi/data --dtype float32 --output /content/drive/MyDrive/bifi-syntax --amp $(ARGS) 
+
 predict_bifi_syntax:
 	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)"
 
@@ -41,7 +44,7 @@ run_backend:
 	cd src/api && python -m fastapi dev
 
 download_datasets:
-	mkdir data
-	mkdir data/bifi
+	mkdir -p data
+	mkdir -p data/bifi
 	curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
 	unzip data_minimal.zip -d data/bifi
