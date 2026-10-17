@@ -19,6 +19,9 @@ train_bifi_syntax:
 train_oncolab_bifi_syntax:
 	python -m src.training.bifi_syntax train --data data/bifi/data --dtype float32 --output /content/drive/MyDrive/bifi-syntax --amp $(ARGS) 
 
+train_introprog_correctness:
+	python -m src.training.introprog_correctness train --data data/introprog --dtype float32 --amp $(ARGS)
+
 predict_bifi_syntax:
 	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)"
 
@@ -49,3 +52,8 @@ download_datasets:
 	mkdir -p data/bifi
 	curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
 	unzip data_minimal.zip -d data/bifi
+
+download_introprog:
+	mkdir -p data/introprog
+	curl -fSL -o data/introprog/dublin_data_train.jsonl https://huggingface.co/datasets/koutch/intro_prog/resolve/main/data/dublin_data_train.jsonl
+	curl -fSL -o data/introprog/dublin_data_test.jsonl https://huggingface.co/datasets/koutch/intro_prog/resolve/main/data/dublin_data_test.jsonl

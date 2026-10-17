@@ -39,6 +39,32 @@ Ollama/llama.cpp services cannot load it directly. Training defaults are
 conservative and can be tuned with
 `--epochs`, `--batch-size`, `--max-length`, and other CLI options.
 
+### IntroProg execution-correctness fine-tuning (LoRA)
+
+This pipeline fine-tunes the same default Qwen model to classify whether a
+student submission correctly solves its exercise (`CORRECT` or `INCORRECT`).
+Unlike syntax validation, it uses the exercise description and supplied tests
+along with the submitted code. By default it trains on the Dublin training
+split and evaluates against the dataset's official Dublin test split; these
+splits are not randomly mixed. Download the dataset files explicitly before
+training; the pipeline reads the local JSONL files under `data/introprog/`.
+
+```bash
+make download_introprog
+make train_introprog_correctness
+python -m src.training.introprog_correctness eval \
+  --adapter models/introprog-correctness/adapter
+python -m src.training.introprog_correctness predict \
+  --adapter models/introprog-correctness/adapter \
+  --description "Return the sum of two numbers." \
+  --test "assert add(2, 3) == 5" \
+  --code $'def add(a, b):\n    return a + b'
+```
+
+Choose another IntroProg configuration (for example `singapore_data` or
+`newcaledonia_data`) with `--config`; select its available split with `--split`
+for evaluation. Training expects the selected config to provide both train and
+test splits.
 
 ### Scripts 
 
