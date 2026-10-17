@@ -1,21 +1,27 @@
-"""LoRA fine-tuning and inference for BIFI syntax classification (memory-friendly version).
+"""LoRA fine-tuning, evaluation and inference for Python syntax classification (BIFI).
 
-Main differences from the first version:
-- the BIFI JSON files are streamed (ijson) and only a balanced random sample is kept
-  (reservoir sampling), instead of loading ~3M snippets in RAM;
-- long snippets are dropped, never truncated (truncating valid code makes it invalid);
-- the prompt goes through the model chat template, as in llama-server at inference time;
-- the base model is loaded in half precision on GPU/MPS and gradient checkpointing is on;
-- training is bounded (--max-steps) and evaluated on a small subset while training.
+Commands:
+  train    sample BIFI, fine-tune with LoRA, evaluate on the held-out test set and on the exercises
+  eval     evaluate a model (zero-shot baseline, or with --adapter) on BIFI test or on the exercises
+  predict  classify a single snippet
+
+Design notes:
+- the BIFI JSON files are streamed (ijson) and only a balanced random sample is kept;
+- long snippets are dropped, never truncated (a truncated valid snippet looks invalid);
+- prompts go through the chat template, as at inference time with llama-server;
+- training stops automatically on NaN/inf and never saves a corrupted adapter.
 """
 
 import argparse
+import ast
 import json
 import math
 import random
+from collections import Counter
 from pathlib import Path
 from typing import Any, Iterator
 
+from src.metrics.classification import compute_report
 from src.repositories.prompt_syntax_validator_repository import (
     PromptSyntaxValidatorRepository,
 )
@@ -225,28 +231,130 @@ def _classify(model: Any, tokenizer: Any, code: str, max_length: int) -> str:
     return _parse_answer(answer)
 
 
+def _is_valid_python(code: str) -> bool:
+    try:
+        ast.parse(code)
+    except (SyntaxError, ValueError):
+        return False
+    return True
+
+
+def load_exercise_examples(path: Path) -> list[dict[str, str]]:
+    """Exercise implementations; the syntax label comes from ast.parse (as in the experiments)."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return [
+        {
+            "id": str(implementation.get("id", "")),
+            "code": implementation["code"],
+            "label": "VALID" if _is_valid_python(implementation["code"]) else "INVALID",
+        }
+        for item in data["items"]
+        for implementation in item["implementations"]
+    ]
+
+
+def load_cached_test_examples(
+    cache: Path, test_size: float, seed: int
+) -> list[dict[str, str]]:
+    """Same held-out split used by `train` (same cache, test_size and seed)."""
+    if not cache.is_file():
+        raise FileNotFoundError(f"Sample cache not found: {cache}")
+    with cache.open(encoding="utf-8") as handle:
+        examples = [json.loads(line) for line in handle if line.strip()]
+    return split_examples(examples, test_size, seed)[1]
+
+
 def _evaluate(
-    model: Any, tokenizer: Any, examples: list[dict[str, str]], max_length: int
-) -> None:
+    model: Any,
+    tokenizer: Any,
+    examples: list[dict[str, str]],
+    max_length: int,
+    title: str,
+    save_dir: Path | None = None,
+    tag: str = "test",
+) -> Any:
     model.eval()
     model.config.use_cache = True
-    predictions = [
-        _classify(model, tokenizer, example["code"], max_length) for example in examples
-    ]
-    targets = [example["label"] for example in examples]
-    correct = sum(pred == target for pred, target in zip(predictions, targets))
-    print(f"Test accuracy: {correct / len(targets):.4f} ({correct}/{len(targets)})")
-    print(f"Unparsed answers: {predictions.count('UNPARSED')}")
-    for label in LABELS:
-        tp = sum(p == label and t == label for p, t in zip(predictions, targets))
-        fp = sum(p == label and t != label for p, t in zip(predictions, targets))
-        fn = sum(p != label and t == label for p, t in zip(predictions, targets))
-        precision = tp / (tp + fp) if tp + fp else 0.0
-        recall = tp / (tp + fn) if tp + fn else 0.0
-        f1 = (
-            2 * precision * recall / (precision + recall) if precision + recall else 0.0
+    predictions: list[str] = []
+    for index, example in enumerate(examples, start=1):
+        predictions.append(_classify(model, tokenizer, example["code"], max_length))
+        if index % 100 == 0:
+            print(f"  {title}: {index}/{len(examples)}")
+    report = compute_report(
+        [
+            (example["label"], prediction)
+            for example, prediction in zip(examples, predictions)
+        ]
+    )
+    print(report.format(title))
+    confusion = Counter(
+        (example["label"], prediction)
+        for example, prediction in zip(examples, predictions)
+    )
+    print(
+        "Confusion (expected -> predicted): "
+        + ", ".join(
+            f"{expected}->{predicted}: {count}"
+            for (expected, predicted), count in sorted(confusion.items())
         )
-        print(f"{label}: precision={precision:.4f}, recall={recall:.4f}, f1={f1:.4f}")
+    )
+    if save_dir is not None:
+        save_dir.mkdir(parents=True, exist_ok=True)
+        metrics = {
+            "title": title,
+            "total": report.total,
+            "accuracy": report.accuracy,
+            "macro_f1": report.macro_f1,
+            "weighted_f1": report.weighted_f1,
+            "unparsed": report.unparsed,
+            "per_class": {
+                label: {
+                    "precision": item.precision,
+                    "recall": item.recall,
+                    "f1": item.f1,
+                    "support": item.support,
+                }
+                for label, item in report.per_class.items()
+            },
+            "confusion": {f"{e}->{p}": c for (e, p), c in confusion.items()},
+        }
+        (save_dir / f"{tag}_metrics.json").write_text(
+            json.dumps(metrics, indent=2), encoding="utf-8"
+        )
+        with (save_dir / f"{tag}_predictions.jsonl").open(
+            "w", encoding="utf-8"
+        ) as handle:
+            for example, prediction in zip(examples, predictions):
+                row = {key: example[key] for key in ("id", "label") if key in example}
+                row["prediction"] = prediction
+                handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+        print(f"Saved {tag}_metrics.json and {tag}_predictions.jsonl in {save_dir}")
+    return report
+
+
+def _load_for_inference(
+    model_name: str, adapter: Path | None, dtype_name: str
+) -> tuple[Any, Any]:
+    """Load base model (+ optional LoRA adapter) on the best available device."""
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    tokenizer = AutoTokenizer.from_pretrained(str(adapter) if adapter else model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name, dtype=_pick_dtype(torch, dtype_name)
+    )
+    if adapter is not None:
+        from peft import PeftModel
+
+        model = PeftModel.from_pretrained(model, str(adapter))
+    if torch.cuda.is_available():
+        model = model.to("cuda")
+    elif torch.backends.mps.is_available():
+        model = model.to("mps")
+    model.eval()
+    return model, tokenizer
 
 
 # ---------------------------------------------------------------------- commands
@@ -336,6 +444,8 @@ def _training_command(args: argparse.Namespace) -> None:
             if logs and _diverged(logs):
                 self.diverged = True
                 control.should_training_stop = True
+                control.should_save = False  # never write a checkpoint with NaN weights
+                control.should_evaluate = False
                 print(
                     f"[error] NaN/inf at step {state.global_step}: stopping training. "
                     "Try --dtype float32 (or bfloat16) and/or a lower --learning-rate."
@@ -377,7 +487,10 @@ def _training_command(args: argparse.Namespace) -> None:
             tokenizer=tokenizer, model=model, label_pad_token_id=-100
         ),
     )
-    trainer.train(resume_from_checkpoint=True if args.resume else None)
+    resume = bool(args.resume) and any(args.output.glob("checkpoint-*"))
+    if args.resume and not resume:
+        print(f"No checkpoint found in {args.output}: starting from scratch")
+    trainer.train(resume_from_checkpoint=True if resume else None)
     if guard.diverged:
         print("Training diverged: adapter NOT saved and evaluation skipped.")
         return
@@ -385,33 +498,54 @@ def _training_command(args: argparse.Namespace) -> None:
     trainer.save_model(str(adapter_path))
     tokenizer.save_pretrained(str(adapter_path))
     print(f"LoRA adapter saved to {adapter_path}")
-    _evaluate(model, tokenizer, test_examples, args.max_length)
+    _evaluate(
+        model,
+        tokenizer,
+        test_examples,
+        args.max_length,
+        "BIFI held-out test",
+        args.output,
+        "bifi_test",
+    )
+    if args.exercises.is_file():
+        _evaluate(
+            model,
+            tokenizer,
+            load_exercise_examples(args.exercises),
+            args.max_length,
+            "Exercises (160 implementations)",
+            args.output,
+            "exercises",
+        )
 
 
 def _predict_command(args: argparse.Namespace) -> None:
-    try:
-        import torch
-        from peft import PeftModel
-        from transformers import AutoModelForCausalLM, AutoTokenizer
-    except ImportError as exc:
-        raise RuntimeError(
-            "Inference dependencies are missing. Install requirements.txt."
-        ) from exc
-
-    tokenizer = AutoTokenizer.from_pretrained(args.adapter)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    base_model = AutoModelForCausalLM.from_pretrained(
-        args.model, dtype=_pick_dtype(torch, args.dtype)
-    )
-    model = PeftModel.from_pretrained(base_model, args.adapter)
-    if torch.backends.mps.is_available():
-        model = model.to("mps")
-    model.eval()
+    model, tokenizer = _load_for_inference(args.model, args.adapter, args.dtype)
     label = _classify(model, tokenizer, args.code, args.max_length)
     if label == "UNPARSED":
         raise RuntimeError("Model returned an unrecognized label")
     print(label)
+
+
+def _eval_command(args: argparse.Namespace) -> None:
+    """Evaluate the base model (zero-shot) or base + adapter on a labelled set."""
+    if args.source == "exercises":
+        examples = load_exercise_examples(args.exercises)
+    else:
+        examples = load_cached_test_examples(args.cache, args.test_size, args.seed)
+    if args.limit:
+        examples = examples[: args.limit]
+    model, tokenizer = _load_for_inference(args.model, args.adapter, args.dtype)
+    name = "fine-tuned" if args.adapter else "zero-shot"
+    _evaluate(
+        model,
+        tokenizer,
+        examples,
+        args.max_length,
+        f"{args.source} / {name} / {args.model}",
+        args.output,
+        f"{args.source}_{name}",
+    )
 
 
 def main() -> None:
@@ -485,22 +619,59 @@ def main() -> None:
         help="CUDA only: fp16 mixed precision with loss scaling (faster on T4/P100; keep weights in float32)",
     )
     train.add_argument("--no-gradient-checkpointing", action="store_true")
+    train.add_argument(
+        "--exercises",
+        type=Path,
+        default=Path("src/samples/configs/implementation.json"),
+        help="Exercises evaluated after training (skipped if missing)",
+    )
     train.add_argument("--lora-rank", type=int, default=16)
     train.add_argument("--lora-alpha", type=int, default=32)
     train.add_argument("--lora-dropout", type=float, default=0.05)
     train.set_defaults(handler=_training_command)
 
-    predict = commands.add_parser(
-        "predict", help="Classify a snippet using a saved LoRA adapter"
+    evaluate = commands.add_parser(
+        "eval",
+        help="Evaluate a model (zero-shot, or with --adapter) on BIFI test or exercises",
     )
-    predict.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
-    predict.add_argument("--adapter", type=Path, required=True)
-    predict.add_argument("--code", required=True)
-    predict.add_argument("--max-length", type=int, default=768)
-    predict.add_argument(
+    evaluate.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B-Instruct")
+    evaluate.add_argument(
+        "--adapter",
+        type=Path,
+        default=None,
+        help="LoRA adapter directory; omit for the zero-shot baseline",
+    )
+    evaluate.add_argument(
+        "--source", choices=["bifi", "exercises"], default="exercises"
+    )
+    evaluate.add_argument("--cache", type=Path, default=Path("data/bifi_sample.jsonl"))
+    evaluate.add_argument(
+        "--exercises",
+        type=Path,
+        default=Path("src/samples/configs/implementation.json"),
+    )
+    evaluate.add_argument(
+        "--test-size",
+        type=float,
+        default=0.1,
+        help="Must match the value used by `train`",
+    )
+    evaluate.add_argument("--seed", type=int, default=42, help="Must match `train`")
+    evaluate.add_argument(
+        "--limit", type=int, default=0, help="Evaluate only the first N examples"
+    )
+    evaluate.add_argument("--max-length", type=int, default=768)
+    evaluate.add_argument(
         "--dtype", default="auto", choices=["auto", "float32", "float16", "bfloat16"]
     )
-    predict.set_defaults(handler=_predict_command)
+    evaluate.add_argument(
+        "--output",
+        type=Path,
+        default=Path("models/eval"),
+        help="Directory for the metrics/predictions files",
+    )
+    evaluate.set_defaults(handler=_eval_command)
+
     args = parser.parse_args()
     args.handler(args)
 

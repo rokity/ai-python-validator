@@ -14,7 +14,7 @@ typing-inspection==0.4.2
 typing_extensions==4.15.0
 urllib3==2.6.3
 torch
-transformers>=4.46
+transformers==4.57.6
 peft>=0.13
 datasets>=3.0
 accelerate>=1.0

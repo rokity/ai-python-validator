@@ -14,13 +14,13 @@ sample_complexity_exercises:
 	python -m src.samples.sample_complexity_exercises
 
 train_bifi_syntax:
-	python -m src.training.bifi_syntax train --data data/bifi/data $(if $(MODEL),--model $(MODEL)) --max-steps 20
+	python -m src.training.bifi_syntax train --data data/bifi/data --dtype float32 --amp $(ARGS)
 
 predict_bifi_syntax:
-	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)" $(if $(MODEL),--model $(MODEL))
+	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)"
 
 install:
-	python -m pip install --ignore-installed --no-deps --dry-run -r requirements.txt	
+	python -m pip install -r requirements.txt	
 
 freeze:
 	pip freeze > requirements.txt
