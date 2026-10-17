@@ -22,6 +22,9 @@ predict_bifi_syntax:
 install:
 	python -m pip install -r requirements.txt	
 
+install_colab:
+	python -m pip install -q transformers==4.57.6 "peft>=0.13" "datasets>=3.0" "accelerate>=1.0" ijson
+
 freeze:
 	pip freeze > requirements.txt
 
