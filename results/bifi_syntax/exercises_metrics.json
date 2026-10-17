@@ -1,0 +1,27 @@
+{
+  "title": "Exercises (160 implementations)",
+  "total": 160,
+  "accuracy": 0.95625,
+  "macro_f1": 0.8978008942421754,
+  "weighted_f1": 0.9596313532256593,
+  "unparsed": 0,
+  "per_class": {
+    "VALID": {
+      "precision": 1.0,
+      "recall": 0.9513888888888888,
+      "f1": 0.9750889679715302,
+      "support": 144
+    },
+    "INVALID": {
+      "precision": 0.6956521739130435,
+      "recall": 1.0,
+      "f1": 0.8205128205128205,
+      "support": 16
+    }
+  },
+  "confusion": {
+    "VALID->VALID": 137,
+    "INVALID->INVALID": 16,
+    "VALID->INVALID": 7
+  }
+}

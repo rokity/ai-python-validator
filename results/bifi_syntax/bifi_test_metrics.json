@@ -1,0 +1,28 @@
+{
+  "title": "BIFI held-out test",
+  "total": 1000,
+  "accuracy": 0.964,
+  "macro_f1": 0.9639994239907839,
+  "weighted_f1": 0.963999423990784,
+  "unparsed": 0,
+  "per_class": {
+    "VALID": {
+      "precision": 0.9603174603174603,
+      "recall": 0.968,
+      "f1": 0.9641434262948207,
+      "support": 500
+    },
+    "INVALID": {
+      "precision": 0.967741935483871,
+      "recall": 0.96,
+      "f1": 0.963855421686747,
+      "support": 500
+    }
+  },
+  "confusion": {
+    "VALID->VALID": 484,
+    "INVALID->INVALID": 480,
+    "INVALID->VALID": 20,
+    "VALID->INVALID": 16
+  }
+}
