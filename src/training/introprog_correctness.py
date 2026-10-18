@@ -434,7 +434,7 @@ def main() -> None:
     train.add_argument("--batch-size", type=int, default=1)
     train.add_argument("--grad-accum", type=int, default=16)
     train.add_argument("--learning-rate", type=float, default=1e-4)
-    train.add_argument("--max-length", type=int, default=1024)
+    train.add_argument("--max-length", type=int, default=768)
     train.add_argument("--eval-steps", type=int, default=50)
     train.add_argument("--resume", action="store_true")
     train.add_argument("--dtype", default="auto", choices=["auto", "float32", "float16", "bfloat16"])
