@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 import math
 import random
@@ -317,32 +318,54 @@ def _training_command(args: argparse.Namespace) -> None:
         eval_examples = random.Random(args.seed).sample(eval_examples, args.eval_samples)
     eval_data = prepare(eval_examples)
     guard = StopOnDivergence()
+    training_args = {
+        "output_dir": str(args.output),
+        "num_train_epochs": args.epochs,
+        "max_steps": args.max_steps,
+        "per_device_train_batch_size": args.batch_size,
+        "per_device_eval_batch_size": args.batch_size,
+        "gradient_accumulation_steps": args.grad_accum,
+        "learning_rate": args.learning_rate,
+        "lr_scheduler_type": "cosine",
+        "logging_steps": 10,
+        "eval_strategy": "steps",
+        "eval_steps": args.eval_steps,
+        "save_strategy": "steps",
+        "save_steps": args.eval_steps,
+        "save_total_limit": 2,
+        "load_best_model_at_end": True,
+        "metric_for_best_model": "eval_loss",
+        "greater_is_better": False,
+        "dataloader_pin_memory": False,
+        "fp16": args.amp,
+        "seed": args.seed,
+        "report_to": "none",
+    }
+    supported_arguments = inspect.signature(TrainingArguments).parameters
+    if "warmup_ratio" in supported_arguments:
+        training_args["warmup_ratio"] = 0.03
+    elif "warmup_steps" in supported_arguments:
+        steps_per_epoch = math.ceil(
+            math.ceil(len(train_data) / args.batch_size) / args.grad_accum
+        )
+        total_steps = (
+            args.max_steps
+            if args.max_steps > 0
+            else math.ceil(steps_per_epoch * args.epochs)
+        )
+        training_args["warmup_steps"] = round(total_steps * 0.03)
+        print(
+            "TrainingArguments does not support warmup_ratio; "
+            f"using warmup_steps={training_args['warmup_steps']} instead."
+        )
+    else:
+        raise RuntimeError(
+            "This transformers version supports neither warmup_ratio nor "
+            "warmup_steps in TrainingArguments. Upgrade transformers."
+        )
     trainer = Trainer(
         model=model,
-        args=TrainingArguments(
-            output_dir=str(args.output),
-            num_train_epochs=args.epochs,
-            max_steps=args.max_steps,
-            per_device_train_batch_size=args.batch_size,
-            per_device_eval_batch_size=args.batch_size,
-            gradient_accumulation_steps=args.grad_accum,
-            learning_rate=args.learning_rate,
-            lr_scheduler_type="cosine",
-            warmup_ratio=0.03,
-            logging_steps=10,
-            eval_strategy="steps",
-            eval_steps=args.eval_steps,
-            save_strategy="steps",
-            save_steps=args.eval_steps,
-            save_total_limit=2,
-            load_best_model_at_end=True,
-            metric_for_best_model="eval_loss",
-            greater_is_better=False,
-            dataloader_pin_memory=False,
-            fp16=args.amp,
-            seed=args.seed,
-            report_to="none",
-        ),
+        args=TrainingArguments(**training_args),
         callbacks=[guard],
         train_dataset=train_data,
         eval_dataset=eval_data,
