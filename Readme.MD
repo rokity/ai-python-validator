@@ -61,6 +61,11 @@ python -m src.training.introprog_correctness predict \
   --code $'def add(a, b):\n    return a + b'
 ```
 
+On Kaggle, use `make train_onkaggle_introprog_correctness`: it restricts the
+training process to one GPU to avoid `DataParallel` gradient-gathering overhead.
+For tighter VRAM limits, pass options such as
+`ARGS="--max-length 384"`; examples longer than that limit are dropped.
+
 Choose another IntroProg configuration (for example `singapore_data` or
 `newcaledonia_data`) with `--config`; select its available split with `--split`
 for evaluation. Training expects the selected config to provide both train and

@@ -20,7 +20,7 @@ train_oncolab_bifi_syntax:
 	python -m src.training.bifi_syntax train --data data/bifi/data --dtype float32 --output /content/drive/MyDrive/bifi-syntax --amp $(ARGS) 
 
 train_onkaggle_introprog_correctness:
-	python -m src.training.introprog_correctness train --data data/introprog --dtype float32 --amp --output /kaggle/working/introprog-correctness $(ARGS)
+	CUDA_VISIBLE_DEVICES=0 python -m src.training.introprog_correctness train --data data/introprog --dtype float32 --amp --output /kaggle/working/introprog-correctness $(ARGS)
 
 predict_bifi_syntax:
 	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)"
