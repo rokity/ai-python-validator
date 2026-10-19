@@ -1,0 +1,28 @@
+{
+  "title": "bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "total": 1000,
+  "accuracy": 0.521,
+  "macro_f1": 0.47257790486802886,
+  "weighted_f1": 0.4725779048680289,
+  "unparsed": 0,
+  "per_class": {
+    "VALID": {
+      "precision": 0.5130759651307597,
+      "recall": 0.824,
+      "f1": 0.632386799693016,
+      "support": 500
+    },
+    "INVALID": {
+      "precision": 0.5532994923857868,
+      "recall": 0.218,
+      "f1": 0.31276901004304164,
+      "support": 500
+    }
+  },
+  "confusion": {
+    "VALID->INVALID": 88,
+    "INVALID->INVALID": 109,
+    "VALID->VALID": 412,
+    "INVALID->VALID": 391
+  }
+}
