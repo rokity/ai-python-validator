@@ -22,6 +22,12 @@ train_oncolab_bifi_syntax:
 train_onkaggle_introprog_correctness:
 	CUDA_VISIBLE_DEVICES=0 python -m src.training.introprog_correctness train --data data/introprog --dtype float32 --amp --output /kaggle/working/introprog-correctness $(ARGS)
 
+train_codecomplex_complexity:
+	python -m src.training.codecomplex_complexity train --data data/codecomplex $(ARGS)
+
+train_onkaggle_codecomplex_complexity:
+	CUDA_VISIBLE_DEVICES=0 python -m src.training.codecomplex_complexity train --data data/codecomplex --dtype float32 --amp --output /kaggle/working/codecomplex-complexity $(ARGS)
+
 predict_bifi_syntax:
 	python -m src.training.bifi_syntax predict --adapter $(ADAPTER) --code "$(CODE)"
 
@@ -47,7 +53,7 @@ run_frontend:
 run_backend:
 	cd src/api && python -m fastapi dev
 
-download_datasets:
+download_bifi_syntax:
 	mkdir -p data
 	mkdir -p data/bifi
 	curl -fSL -o data_minimal.zip https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip
@@ -57,3 +63,7 @@ download_introprog:
 	mkdir -p data/introprog
 	curl -fSL -o data/introprog/dublin_data_train.jsonl https://huggingface.co/datasets/koutch/intro_prog/resolve/main/data/dublin_data_train.jsonl
 	curl -fSL -o data/introprog/dublin_data_test.jsonl https://huggingface.co/datasets/koutch/intro_prog/resolve/main/data/dublin_data_test.jsonl
+
+download_codecomplex:
+	mkdir -p data/codecomplex
+	curl -fSL -o data/codecomplex/new_data.jsonl https://raw.githubusercontent.com/yonsei-toc/CodeComple/main/new_data.jsonl

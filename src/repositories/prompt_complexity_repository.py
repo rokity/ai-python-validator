@@ -11,9 +11,11 @@ COMPLEXITY_CLASSES = [
     "O(n^3)",
     "O(2^n)",
     "O(n!)",
+    "NP-hard",
 ]
 
 _NORMALIZATION_PATTERNS = [
+    (r"\bnp(?:[\s-]*hard)?\b", "NP-hard"),
     (r"o\(\s*n\s*!\s*\)", "O(n!)"),
     (r"o\(\s*2\s*(\^|\*\*)\s*n\s*\)", "O(2^n)"),
     (r"o\(\s*n\s*(\^|\*\*)\s*3\s*\)", "O(n^3)"),
@@ -33,7 +35,7 @@ class PromptComplexityRepository(PromptRepository):
             "You're a professor that evaluates the worst case time complexity of the following {language} code, "
             "this is the exercise '{exercise}' and this is the student implementation : \n"
             "```{language}\n{code}\n```"
-            "\nReply with exactly one Big-O class chosen from this list: "
+            "\nReply with exactly one complexity class chosen from this list: "
             f"{', '.join(COMPLEXITY_CLASSES)}."
             "\nNo explanations, no punctuation, no reasoning, no results different from the one Big-O class response."
             "\nUse 'n' as the size of the input processed by the implementation."

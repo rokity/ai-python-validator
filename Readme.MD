@@ -71,6 +71,31 @@ Choose another IntroProg configuration (for example `singapore_data` or
 for evaluation. Training expects the selected config to provide both train and
 test splits.
 
+### CodeComplex complexity fine-tuning (LoRA)
+
+This pipeline uses Qwen with LoRA to classify the worst-case time complexity
+of Java solutions. It reuses `PromptComplexityRepository` and its Big-O
+normalization. CodeComplex's `np` annotation is exposed as `NP-hard`, rather
+than incorrectly mapping it to a specific exponential Big-O class. The dataset
+repository's `new_data.jsonl` is a JSON array containing 4,517 examples; the
+pipeline splits examples by Codeforces problem so solutions to one problem
+cannot leak across train and test.
+
+```bash
+make download_codecomplex
+make train_codecomplex_complexity
+python -m src.training.codecomplex_complexity eval \
+  --adapter models/codecomplex-complexity/adapter
+python -m src.training.codecomplex_complexity predict \
+  --adapter models/codecomplex-complexity/adapter \
+  --exercise "1179_B. Tolik and His Uncle" \
+  --code $'public class Main { public static void main(String[] args) {} }'
+```
+
+For Kaggle, use `make train_onkaggle_codecomplex_complexity`; it limits the
+training process to one visible GPU. Use `ARGS="--max-length 384"` to reduce
+VRAM use; examples over the chosen token limit are dropped.
+
 ### Scripts 
 
 

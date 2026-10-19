@@ -1,0 +1,33 @@
+{
+  "title": "CodeComplex held-out test / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "total": 1041,
+  "accuracy": 0.2276657060518732,
+  "macro_f1": 0.12594728884003334,
+  "weighted_f1": 0.13469965206937246,
+  "unparsed": 0,
+  "confusion": {
+    "O(n)->O(n)": 196,
+    "NP-hard->O(n)": 76,
+    "O(n^2)->O(n)": 115,
+    "NP-hard->O(2^n)": 10,
+    "O(n^3)->O(n)": 115,
+    "O(n^3)->O(n^2)": 68,
+    "O(1)->O(n)": 114,
+    "O(log n)->O(n)": 74,
+    "O(n log n)->O(n)": 162,
+    "O(n log n)->O(n log n)": 18,
+    "NP-hard->O(n^2)": 17,
+    "O(1)->O(1)": 3,
+    "NP-hard->O(n!)": 17,
+    "O(n^3)->O(n log n)": 2,
+    "O(n^3)->O(n!)": 9,
+    "O(log n)->O(n log n)": 13,
+    "O(n^2)->O(n^2)": 6,
+    "O(n^2)->O(n log n)": 5,
+    "O(log n)->O(n!)": 1,
+    "O(log n)->O(log n)": 14,
+    "O(n^2)->O(n!)": 4,
+    "O(1)->O(log n)": 1,
+    "NP-hard->O(n log n)": 1
+  }
+}

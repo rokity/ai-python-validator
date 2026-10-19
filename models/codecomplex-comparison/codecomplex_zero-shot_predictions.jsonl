@@ -1,0 +1,1041 @@
+{"id": "864", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3999", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "896", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2426", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4013", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "3692", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4028", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3693", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2784", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3288", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3606", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3618", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3295", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1355", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3998", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "201", "problem": "913_E. Logical Expression", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "652", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3689", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "635", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1843", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3946", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "461", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1145", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3302", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3958", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "474", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "460", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2101", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1615", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3305", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "257", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1538", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "1196", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3577", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2344", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2346", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3278", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3512", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4030", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1124", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "669", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "898", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2433", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "271", "problem": "1000_A. Codehorses T-shirts", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1357", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1139", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "4040", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "4049", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "2707", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "291", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "311", "problem": "1191_D. Tokitsukaze, CSL and Stone Game", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1617", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1167", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3280", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1359", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1524", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1544", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3636", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3942", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3975", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3681", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "501", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "489", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "177", "problem": "975_C. Valhalla Siege", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "885", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2772", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3605", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "438", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3528", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1584", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "663", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3679", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "4015", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "2059", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2372", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3279", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(1)"}
+{"id": "3301", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2229", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2384", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1346", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "915", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "4052", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3658", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1142", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2084", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1171", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3561", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1629", "problem": "1006_B. Polycarp's Practice", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2407", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "464", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2083", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3573", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1159", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "494", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1531", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "3674", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n log n)"}
+{"id": "2105", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3511", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "2099", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "657", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1148", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1354", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "3599", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "874", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1592", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3962", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2803", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3957", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3500", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1353", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "4048", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3558", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "454", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "238", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2419", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "466", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3661", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1604", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3579", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "476", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2077", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1686", "problem": "980_E. The Number Games", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1168", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2818", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4001", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2215", "problem": "994_A. Fingerprints", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "3567", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4008", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "909", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "491", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2365", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "7", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "127", "problem": "1005_C. Summarize to the Power of Two", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "867", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2792", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2398", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "1585", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3497", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3632", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3644", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3647", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3976", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2064", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "1151", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "255", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1342", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "1608", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2349", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n log n)"}
+{"id": "2814", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1153", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2081", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4054", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3551", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3965", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3980", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3943", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3638", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2794", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1127", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "2355", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3521", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2389", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "478", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1570", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "480", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3970", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3938", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1360", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3639", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3486", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "643", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3307", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3610", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1183", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "484", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2771", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "188", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "889", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3634", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3273", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "521", "problem": "1037_C. Equalize", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3633", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4034", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "4025", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1598", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "437", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1579", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3688", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "4036", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1138", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1141", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "894", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3659", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1147", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "210", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3303", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3271", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2343", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2424", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1580", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3663", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "477", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2106", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3269", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1176", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n!)"}
+{"id": "870", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1136", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "3959", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2100", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1587", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "893", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "486", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "24", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "905", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1568", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "1528", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "628", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "261", "problem": "961_B. Lecture Sleep", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3287", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "632", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2800", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2427", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "3571", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "866", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3495", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1522", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "323", "problem": "961_B. Lecture Sleep", "label": "O(n)", "prediction": "O(n)"}
+{"id": "901", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3554", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2391", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3655", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "671", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2807", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2385", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "872", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2824", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1525", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1589", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2363", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1158", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "637", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3629", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1194", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3310", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4018", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3515", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1187", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "665", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3967", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "458", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "655", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3641", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3298", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4021", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3274", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "307", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n)", "prediction": "O(n)"}
+{"id": "298", "problem": "990_C. Bracket Sequences Concatenation Problem", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1175", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3282", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3277", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3963", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "4033", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3652", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2809", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "645", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3972", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2230", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n!)"}
+{"id": "1543", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3509", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1526", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "2098", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1157", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3682", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2225", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n!)"}
+{"id": "2378", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3499", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1618", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3588", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1594", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "269", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3981", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "1840", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1575", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1163", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "475", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3289", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2091", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2072", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2339", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3559", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3953", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3493", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1352", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "4053", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "1150", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "910", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "222", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2359", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "3281", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3670", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3284", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3650", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3504", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "493", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "884", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1137", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1182", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1561", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2067", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "747", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3568", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "184", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2421", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1343", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "4051", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3627", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2374", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1588", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "220", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3557", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1681", "problem": "1197_A. DIY Wooden Ladder", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "322", "problem": "962_A. Equator", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3598", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2412", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2422", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1154", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "2416", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2096", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1583", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2822", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "667", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1191", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1155", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2353", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1551", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3308", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3621", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3594", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4014", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3293", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3276", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1345", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "3662", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1552", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "899", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2074", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "3496", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2227", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n!)"}
+{"id": "2086", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3285", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3668", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3489", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "907", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3984", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "658", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3597", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2408", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3576", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2078", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "882", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2228", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2434", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2336", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3562", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3584", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2092", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2226", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "472", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "262", "problem": "914_C. Travelling Salesman and Special Numbers", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1338", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2090", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "908", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3552", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3270", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(1)"}
+{"id": "1361", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "2388", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "912", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1189", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3294", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3265", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2097", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1169", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "195", "problem": "962_A. Equator", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1566", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2060", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3665", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3292", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3560", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4002", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "727", "problem": "1075_B. Taxi drivers and Lyft", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1152", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3264", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2802", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1356", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "84", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "191", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2375", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2423", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2778", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2805", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1603", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3608", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3660", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3503", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "746", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3630", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2222", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "660", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "914", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2780", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3522", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4057", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2428", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1600", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "639", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3952", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1553", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4011", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1348", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "1162", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "3982", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "1179", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2380", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4044", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1537", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "3583", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3589", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1195", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3948", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3960", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3964", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3686", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "666", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "229", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2788", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3620", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "455", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "42", "problem": "1037_C. Equalize", "label": "O(n)", "prediction": "O(n)"}
+{"id": "4047", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2793", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2065", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2782", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1362", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "3631", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1842", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3309", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "15", "problem": "912_A. Tricky Alchemy", "label": "O(1)", "prediction": "O(n)"}
+{"id": "471", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1554", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2817", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3492", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1174", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "1340", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "1363", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3565", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "481", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "500", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1337", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1134", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "3949", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "1140", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "883", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3675", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "434", "problem": "1036_B. Diagonal Walking v.2", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2104", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1190", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "463", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "673", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "465", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "668", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3985", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2812", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1565", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "1541", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1619", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1539", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3563", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "372", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2781", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2093", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "299", "problem": "965_A. Paper Airplanes", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4029", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3604", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2790", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "871", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1596", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2347", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "865", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2233", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2371", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3669", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2079", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3502", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2392", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1558", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4016", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "878", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2823", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3971", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3990", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3646", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "498", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3991", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2798", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3267", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2075", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "99", "problem": "1029_E. Tree with Small Distances", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1534", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "473", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "906", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3612", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3626", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2387", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3517", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "1560", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "890", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1559", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2094", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3299", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3601", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "881", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2825", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(log n)"}
+{"id": "4006", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2394", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1180", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3950", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3657", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "456", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "880", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3291", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4023", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1523", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "856", "problem": "914_C. Travelling Salesman and Special Numbers", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2352", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3614", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "4020", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1684", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "234", "problem": "1054_D. Changing Array", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1685", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "659", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2062", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3941", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2783", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4056", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1555", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2073", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3490", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2425", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1557", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2390", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3524", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3973", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "728", "problem": "913_B. Christmas Spruce", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3956", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2406", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3595", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3585", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2811", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3600", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2103", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "143", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1616", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "2362", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "748", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1177", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "252", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3519", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3678", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2405", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1349", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "485", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "469", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3607", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3311", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3052", "problem": "991_D. Bishwock", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3947", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "664", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3995", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1351", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2819", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2361", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "630", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "192", "problem": "912_C. Perun, Ult!", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3501", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2107", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3672", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1567", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1593", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3986", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "9", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3643", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "634", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2820", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "644", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1597", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4046", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "2414", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3523", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3574", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3622", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4043", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2341", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2382", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3491", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "636", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "879", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2801", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4003", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1146", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "274", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4027", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "1606", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1128", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3940", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "2089", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "640", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3596", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1521", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2061", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2356", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n log n)"}
+{"id": "4035", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2417", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "911", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1605", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2376", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n log n)"}
+{"id": "3592", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "863", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3488", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2223", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1530", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4005", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "4058", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "641", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1574", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1602", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3993", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2386", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1166", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "203", "problem": "1009_C. Annoying Present", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3625", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3996", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3581", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "875", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1339", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1193", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1172", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "656", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2340", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1186", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2066", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2796", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4004", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1161", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "190", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "482", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3997", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1841", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1178", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2813", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4032", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1612", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1165", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2785", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3673", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1571", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1135", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "146", "problem": "980_E. The Number Games", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1125", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1517", "problem": "975_C. Valhalla Siege", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "3487", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3508", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1577", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "490", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1591", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2410", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1156", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3687", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3527", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "242", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2381", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1620", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3593", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2420", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3691", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3520", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3685", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3642", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2367", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1578", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "651", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1595", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3654", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "676", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3611", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3635", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "56", "problem": "908_E. New Year and Entity Enumeration", "label": "O(n^2)", "prediction": "O(n!)"}
+{"id": "1562", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3297", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2232", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3587", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2826", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3564", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3556", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3485", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2345", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2718", "problem": "965_A. Paper Airplanes", "label": "O(1)", "prediction": "O(n)"}
+{"id": "649", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "497", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "4042", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3262", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "662", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2786", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3989", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "4009", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "3983", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1607", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3518", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "2335", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3961", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3586", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1185", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "3514", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3531", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "3525", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "650", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "647", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1610", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3516", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2799", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3572", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2364", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3304", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "453", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "895", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1143", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "902", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2409", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "633", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3945", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3505", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3494", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "3994", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1556", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2366", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "468", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3656", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "873", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2821", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1573", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2217", "problem": "1029_A. Many Equal Substrings", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "654", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "457", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2063", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1576", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4037", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2789", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1599", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1569", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2993", "problem": "1033_A. King Escape", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1564", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1614", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3555", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3507", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2231", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2992", "problem": "1033_A. King Escape", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3649", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3666", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3296", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1129", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "674", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3992", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "71", "problem": "1036_B. Diagonal Walking v.2", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2058", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3615", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2396", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2369", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1563", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3667", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2087", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3268", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "483", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1133", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3951", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1344", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "1347", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1341", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2342", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1529", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3987", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "462", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "661", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "868", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1609", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "646", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2102", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1170", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2116", "problem": "1054_D. Changing Array", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2337", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4045", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "2070", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3566", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1626", "problem": "1005_C. Summarize to the Power of Two", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2797", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "642", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2358", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1545", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2350", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2432", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1586", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4055", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(2^n)"}
+{"id": "371", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1527", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1132", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3653", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2373", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2234", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3939", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "913", "problem": "1029_E. Tree with Small Distances", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2810", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2806", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3974", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "1131", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1358", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3695", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3977", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "4026", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "672", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3526", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "876", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3624", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3978", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2224", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2431", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "451", "problem": "1191_D. Tokitsukaze, CSL and Stone Game", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3637", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "4031", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2411", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1546", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2403", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "904", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2770", "problem": "1028_B. Unnatural Conditions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3591", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "2779", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3513", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2080", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2338", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "648", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3955", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "205", "problem": "1029_C. Maximal Intersection", "label": "O(n)", "prediction": "O(n)"}
+{"id": "487", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1164", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2357", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3283", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2071", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1611", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "903", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3988", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n log n)"}
+{"id": "2400", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "522", "problem": "990_C. Bracket Sequences Concatenation Problem", "label": "O(n)", "prediction": "O(n)"}
+{"id": "4017", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3680", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "869", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2348", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n log n)"}
+{"id": "2827", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1184", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "1192", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3671", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "4007", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1173", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n log n)"}
+{"id": "3651", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "631", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2399", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4038", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3697", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "452", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1547", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "496", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1535", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "96", "problem": "1075_B. Taxi drivers and Lyft", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3506", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n!)"}
+{"id": "4050", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3306", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2430", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2082", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2547", "problem": "1000_A. Codehorses T-shirts", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1550", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1533", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "638", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2415", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4041", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2418", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2808", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3613", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3623", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "916", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "677", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3966", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "888", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "459", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1536", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1572", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1581", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3578", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3676", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3979", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n^2)"}
+{"id": "2068", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3645", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "108", "problem": "1006_B. Polycarp's Practice", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3696", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "678", "problem": "1029_C. Maximal Intersection", "label": "O(n)", "prediction": "O(n)"}
+{"id": "4010", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "891", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "373", "problem": "1180_B. Nick and Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1149", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2108", "problem": "912_C. Perun, Ult!", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2370", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2791", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2816", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2383", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2069", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3664", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1123", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "248", "problem": "1197_B. Pillars", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3275", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2404", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2804", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2393", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "3590", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1542", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "4039", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "3529", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "1188", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "2088", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3290", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4019", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3530", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "886", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2351", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2402", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "467", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3553", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "428", "problem": "1009_C. Annoying Present", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2368", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2719", "problem": "965_A. Paper Airplanes", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2095", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "892", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3300", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(1)"}
+{"id": "54", "problem": "913_B. Christmas Spruce", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2413", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "495", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3569", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3580", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3694", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1839", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "1144", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3602", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "196", "problem": "994_A. Fingerprints", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "1590", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "109", "problem": "908_G. New Year and Original Order", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4024", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "1181", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3684", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "1122", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "1601", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "193", "problem": "1033_A. King Escape", "label": "O(1)", "prediction": "O(n)"}
+{"id": "887", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2711", "problem": "913_E. Logical Expression", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2085", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "4000", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2706", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "287", "problem": "1190_C. Tokitsukaze and Duel", "label": "O(n)", "prediction": "O(n)"}
+{"id": "900", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3640", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3603", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2777", "problem": "912_A. Tricky Alchemy", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3968", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3575", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "670", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3619", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3616", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3263", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2815", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "4012", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n!)"}
+{"id": "1548", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "897", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1350", "problem": "713_B. Searching Rectangles", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3582", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "492", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3628", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2787", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "479", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "675", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "1683", "problem": "1197_C. Array Splitting", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2708", "problem": "1196_D2. RGB Substring (hard version)", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1540", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "89", "problem": "991_D. Bishwock", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2395", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1582", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "499", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3690", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3617", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "470", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3498", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n log n)"}
+{"id": "1549", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3510", "problem": "1515_E. Phoenix and Computers", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2377", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2076", "problem": "135_A. Replacement", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "3954", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2354", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "4022", "problem": "1185_G1. Playlist for Polycarp (easy version)", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "3286", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "3648", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "877", "problem": "224_B. Array", "label": "O(n)", "prediction": "O(n)"}
+{"id": "653", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "2360", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n^2)"}
+{"id": "3969", "problem": "111_C. Petya and Spiders", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "1160", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(n)"}
+{"id": "3272", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "2429", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n log n)"}
+{"id": "153", "problem": "1061_B. Views Matter", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "2795", "problem": "267_A. Subtractions", "label": "O(1)", "prediction": "O(n)"}
+{"id": "629", "problem": "25_A. IQ test", "label": "O(n)", "prediction": "O(n)"}
+{"id": "245", "problem": "1033_A. King Escape", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1126", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "3677", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3266", "problem": "199_A. Hexadecimal's theorem", "label": "O(1)", "prediction": "O(n)"}
+{"id": "1130", "problem": "817_C. Really Big Numbers", "label": "O(log n)", "prediction": "O(log n)"}
+{"id": "1532", "problem": "274_A. k-Multiple Free Set", "label": "O(n log n)", "prediction": "O(n log n)"}
+{"id": "3683", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "2379", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "1613", "problem": "220_A. Little Elephant and Problem", "label": "O(n log n)", "prediction": "O(n)"}
+{"id": "488", "problem": "1000_A. Codehorses T-shirts", "label": "O(n)", "prediction": "O(n)"}
+{"id": "3609", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n)"}
+{"id": "3570", "problem": "35_C. Fire Again", "label": "O(n^3)", "prediction": "O(n^2)"}
+{"id": "3944", "problem": "839_E. Mother of Dragons", "label": "NP-hard", "prediction": "O(n)"}
+{"id": "2401", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "81", "problem": "965_A. Paper Airplanes", "label": "O(1)", "prediction": "O(n)"}
+{"id": "236", "problem": "1029_A. Many Equal Substrings", "label": "O(n^2)", "prediction": "O(n)"}
+{"id": "2397", "problem": "911_D. Inversion Counting", "label": "O(n^2)", "prediction": "O(n)"}
