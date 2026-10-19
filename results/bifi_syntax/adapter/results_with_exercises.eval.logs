@@ -1,0 +1,16 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792240285.203149   35780 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792240287.932637   35780 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  exercises / fine-tuned / Qwen/Qwen2.5-Coder-1.5B-Instruct: 100/160
+exercises / fine-tuned / Qwen/Qwen2.5-Coder-1.5B-Instruct: failed=7, success=153, unparsed=0
+Accuracy: 0.96
+Macro precision: 0.85, macro recall: 0.98, macro F1: 0.90
+Weighted F1: 0.96
+class        precision  recall      f1  support
+INVALID           0.70    1.00    0.82       16
+VALID             1.00    0.95    0.98      144
+Confusion (expected -> predicted): INVALID->INVALID: 16, VALID->INVALID: 7, VALID->VALID: 137
+Saved exercises_fine-tuned_metrics.json and exercises_fine-tuned_predictions.jsonl in /content/drive/MyDrive/eval_adapter

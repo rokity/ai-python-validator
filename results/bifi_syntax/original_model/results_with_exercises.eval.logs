@@ -1,0 +1,25 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792239419.851307   32072 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792239422.602564   32072 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 100/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 200/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 300/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 400/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 500/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 600/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 700/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 800/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 900/1000
+  bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: 1000/1000
+bifi / zero-shot / Qwen/Qwen2.5-Coder-1.5B-Instruct: failed=479, success=521, unparsed=0
+Accuracy: 0.52
+Macro precision: 0.53, macro recall: 0.52, macro F1: 0.47
+Weighted F1: 0.47
+class        precision  recall      f1  support
+INVALID           0.55    0.22    0.31      500
+VALID             0.51    0.82    0.63      500
+Confusion (expected -> predicted): INVALID->INVALID: 109, INVALID->VALID: 391, VALID->INVALID: 88, VALID->VALID: 412
+Saved bifi_zero-shot_metrics.json and bifi_zero-shot_predictions.jsonl in /content/drive/MyDrive/eval_bifi

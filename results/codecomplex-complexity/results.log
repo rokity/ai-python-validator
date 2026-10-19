@@ -1,0 +1,56 @@
+make train_codecomplex_complexity
+python -m src.training.codecomplex_complexity train --data data/codecomplex 
+Loaded 4517 examples from data/codecomplex/new_data.jsonl: O(1)=662, O(log n)=618, O(n)=717, O(n log n)=672, O(n^2)=648, O(n^3)=600, NP-hard=600
+Split by problem: 3476 train, 1041 held-out test examples
+Loading Qwen/Qwen2.5-Coder-1.5B-Instruct in torch.float32
+trainable params: 2,179,072 || all params: 1,545,893,376 || trainable%: 0.1410
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 3476/3476 [00:06<00:00, 574.85 examples/s]
+Filter: 100%|███████████████████████████████████████████████████████████████████████████████████████| 3476/3476 [00:00<00:00, 19313.56 examples/s]
+Dropped 1446/3476 examples longer than 768 tokens
+Map: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:00<00:00, 531.77 examples/s]
+Filter: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:00<00:00, 21129.99 examples/s]
+Dropped 92/200 examples longer than 768 tokens
+{'loss': 0.4494, 'grad_norm': 1.2569273710250854, 'learning_rate': 9.95928267727387e-05, 'epoch': 0.08}                                           
+{'loss': 0.2437, 'grad_norm': 0.8875700831413269, 'learning_rate': 9.637512255510475e-05, 'epoch': 0.16}                                          
+{'loss': 0.1943, 'grad_norm': 0.7225666642189026, 'learning_rate': 9.014848666026138e-05, 'epoch': 0.24}                                          
+{'loss': 0.1913, 'grad_norm': 0.7862054705619812, 'learning_rate': 8.131691849466153e-05, 'epoch': 0.32}                                          
+{'loss': 0.1591, 'grad_norm': 0.6829399466514587, 'learning_rate': 7.045343185856701e-05, 'epoch': 0.39}                                          
+{'eval_loss': 0.13110536336898804, 'eval_runtime': 336.6482, 'eval_samples_per_second': 0.321, 'eval_steps_per_second': 0.321, 'epoch': 0.39}     
+{'loss': 0.1616, 'grad_norm': 0.4996536374092102, 'learning_rate': 5.826287640548425e-05, 'epoch': 0.47}                                          
+{'loss': 0.1206, 'grad_norm': 0.8269782662391663, 'learning_rate': 4.5536205268140294e-05, 'epoch': 0.55}                                         
+{'loss': 0.1312, 'grad_norm': 0.9025185704231262, 'learning_rate': 3.309915607957487e-05, 'epoch': 0.63}                                          
+{'loss': 0.0949, 'grad_norm': 0.3954828977584839, 'learning_rate': 2.175867509055033e-05, 'epoch': 0.71}                                          
+{'loss': 0.1054, 'grad_norm': 0.7029916644096375, 'learning_rate': 1.2250560517925746e-05, 'epoch': 0.79}                                         
+{'eval_loss': 0.12654879689216614, 'eval_runtime': 182.5583, 'eval_samples_per_second': 0.592, 'eval_steps_per_second': 0.592, 'epoch': 0.79}     
+{'loss': 0.1099, 'grad_norm': 0.5443707704544067, 'learning_rate': 5.191722151947226e-06, 'epoch': 0.87}                                          
+{'loss': 0.1255, 'grad_norm': 1.0628660917282104, 'learning_rate': 1.040154736207194e-06, 'epoch': 0.95}                                          
+{'train_runtime': 11133.323, 'train_samples_per_second': 0.182, 'train_steps_per_second': 0.011, 'train_loss': 0.17033710817652425, 'epoch': 1.0} 
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 127/127 [3:05:33<00:00, 87.66s/it]
+LoRA adapter saved to models/codecomplex-complexity/adapter
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  CodeComplex grouped held-out test: 100/1041
+  CodeComplex grouped held-out test: 200/1041
+  CodeComplex grouped held-out test: 300/1041
+  CodeComplex grouped held-out test: 400/1041
+  CodeComplex grouped held-out test: 500/1041
+  CodeComplex grouped held-out test: 600/1041
+Token indices sequence length is longer than the specified maximum sequence length for this model (48554 > 32768). Running this sequence through the model will result in indexing errors
+  CodeComplex grouped held-out test: 700/1041
+  CodeComplex grouped held-out test: 800/1041
+  CodeComplex grouped held-out test: 900/1041
+  CodeComplex grouped held-out test: 1000/1041
+CodeComplex grouped held-out test: failed=451, success=590, unparsed=2
+Accuracy: 0.57
+Macro precision: 0.64, macro recall: 0.58, macro F1: 0.55
+Weighted F1: 0.55
+class        precision  recall      f1  support
+NP-hard           0.74    0.74    0.74      121
+O(1)              0.79    0.39    0.52      118
+O(log n)          0.37    0.83    0.52      102
+O(n log n)        0.88    0.79    0.83      180
+O(n)              0.64    0.76    0.69      196
+O(n^2)            0.28    0.46    0.35      130
+O(n^3)            0.79    0.10    0.17      194
+UNPARSED          0.00    0.00    0.00        0
+Confusion (expected -> predicted): NP-hard->NP-hard: 89, NP-hard->O(1): 4, NP-hard->O(log n): 19, NP-hard->O(n): 2, NP-hard->O(n^2): 3, NP-hard->O(n^3): 4, O(1)->O(1): 46, O(1)->O(log n): 31, O(1)->O(n log n): 1, O(1)->O(n): 40, O(log n)->NP-hard: 4, O(log n)->O(1): 1, O(log n)->O(log n): 85, O(log n)->O(n log n): 3, O(log n)->O(n): 6, O(log n)->O(n^2): 3, O(n log n)->NP-hard: 2, O(n log n)->O(1): 4, O(n log n)->O(log n): 14, O(n log n)->O(n log n): 143, O(n log n)->O(n): 16, O(n log n)->O(n^2): 1, O(n)->NP-hard: 2, O(n)->O(log n): 16, O(n)->O(n log n): 7, O(n)->O(n): 148, O(n)->O(n^2): 21, O(n)->UNPARSED: 2, O(n^2)->NP-hard: 6, O(n^2)->O(log n): 40, O(n^2)->O(n log n): 9, O(n^2)->O(n): 14, O(n^2)->O(n^2): 60, O(n^2)->O(n^3): 1, O(n^3)->NP-hard: 17, O(n^3)->O(1): 3, O(n^3)->O(log n): 23, O(n^3)->O(n): 5, O(n^3)->O(n^2): 127, O(n^3)->O(n^3): 19
+Saved codecomplex_test_metrics.json and codecomplex_test_predictions.jsonl in models/codecomplex-complexity
